@@ -1,29 +1,68 @@
 <div class="row clearfix layout layout-top-middle">
-  <div class="col-xs-12 col-print-12 details">
-    {%- if include.item.name -%}<h4>{{ include.item.name }}</h4>{%- endif -%}
-    {%- if include.item.company -%}<h4>{{ include.item.company }}</h4>{%- endif -%}
-    {%- if include.item.link -%}
-      {% include a.html href=include.item.link class="link" %}{{ include.item.link }}</a>
+    <div class="col-xs-12 col-print-12 details">
+        {%- if include.item.name -%}<h4>{{ include.item.name }}</h4>{%- endif -%}
+        {%- if include.item.company -%}<h4>{{ include.item.company }}</h4>{%- endif -%}
+        {%- if include.item.link -%}
+        {% include a.html href=include.item.link class="link" %}{{ include.item.link }}</a>
+        {%- endif -%}
+        {%- if include.item.job_title -%}<p><b>{{ include.item.job_title }}</b></p>{%- endif -%}
+        {%- if include.item.qualification -%}<p><b>{{ include.item.qualification }}</b></p>{%- endif -%}
+        {%- if include.item.dates -%}<p>{{ include.item.dates }}</p>{%- endif -%}
+        {% for job in include.item.jobs %}
+        <p><b>{{ job.title }}</b></p>
+        <p>{{ job.dates }}</p>
+        {% endfor %}
+        {%- if include.item.github -%}
+        <p class="no-print">
+            <a href="https://github.com/{{ include.item.github }}" target="_blank">
+                <i class="fa fa-github" title="{{ include.item.name }} Github link"></i>
+            </a>
+        </p>
+        {%- endif -%}
+    </div>
+    <div class="col-xs-12 col-print-12">
+        {%- if include.item.quote -%}
+        <p class="quote">{{ include.item.quote }}</p>
+        {%- endif -%}
+    </div>
+    <div class="col-xs-12 col-print-12 description">
+        {{ include.item.description | strip | markdownify }}
+    </div>
+    {%- if include.item.missions -%}
+    <div class="col-xs-12 col-print-12 missions">
+        <details>
+            <summary>Missions : (cliquez pour agrandir)</summary>
+            <div id="timeline" class="col-xs-12 col-print-12">
+                <div class="timeline">
+                    {% for mission in include.item.missions %}
+                    <div class="timeline__box">
+                        <div class="timeline__date">
+                            <span class="timeline__month">{{mission.start_date.month}}</span>
+                            <span class="timeline__year">{{mission.start_date.year}}</span>
+                        </div>
+                        <div class="timeline__post">
+                            <div class="timeline__content">
+                                <h2>
+                                    <span class="timeline__customer">{{mission.customer}}</span>
+                                    <span class="timeline__title">{{mission.title}}</span>
+                                    <span class="timeline__duration">({{mission.duration}})</span>
+                                </h2>
+                                <p>{{mission.description}}</p>
+                                {%- if mission.skills -%}
+                                    <ul class="skills">
+                                        {% for skill in mission.skills %}
+                                        <li><i class="{{ skill.icon }}" title="{{ skill.name }}"></i>{{skill.name}}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {%- endif -%}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </details>
+    </div>
     {%- endif -%}
-    {%- if include.item.job_title -%}<p><b>{{ include.item.job_title }}</b></p>{%- endif -%}
-    {%- if include.item.qualification -%}<p><b>{{ include.item.qualification }}</b></p>{%- endif -%}
-    {%- if include.item.dates -%}<p>{{ include.item.dates }}</p>{%- endif -%}
-    {% for job in include.item.jobs %}
-      <p><b>{{ job.title }}</b></p>
-      <p>{{ job.dates }}</p>
-    {% endfor %}
-    {%- if include.item.github -%}
-      <p class="no-print">
-        <a href="https://github.com/{{ include.item.github }}" target="_blank">
-          <i class="fa fa-github" title="{{ include.item.name }} Github link"></i>
-        </a>
-      </p>
-    {%- endif -%}
-  </div>
-  <div class="col-xs-12 col-print-12">
-    {%- if include.item.quote -%}
-      <p class="quote">{{ include.item.quote }}</p>
-    {%- endif -%}
-    {{ include.item.description | strip | markdownify }}
-  </div>
+
 </div>

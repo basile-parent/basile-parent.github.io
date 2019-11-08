@@ -19,6 +19,16 @@
         </a>
       </p>
     {%- endif -%}
+    {%- if include.item.skills -%}
+    <div class="skills">
+      <ul>
+          {% for skill in include.item.skills %}
+          <li><i class="{{ skill.icon }}" title="{{ skill.name }}"></i>{{skill.name}}</li>
+          {% endfor %}
+      </ul>
+    </div>
+    {%- endif -%}
+
   </div>
   <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
     {%- if include.item.quote -%}
