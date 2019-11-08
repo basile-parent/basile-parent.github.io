@@ -71,7 +71,7 @@
         {%- endif -%}
         {%- if site.youtube_username -%}
           <li>
-            <a target="_blank" href="https://www.youtube.com/{{ site.youtube_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+            <a target="_blank" href="https://www.youtube.com/{{ site.youtube_username | cgi_escape | escape }}" class="button button--sacnite button--round-l">
               <i class="fab fa-youtube" title="Youtube link"></i>
             </a>
           </li>
@@ -87,7 +87,7 @@
 
       {%- if site.email -%}
         <p>
-          Emailll: <a href="mailto:{{ site.email | encode_email }}" target="_blank">{{ site.email_label }}</a>
+          Email : <a href="mailto:{{ site.email | escape | encode_email }}" target="_blank">{{ site.email_label }}</a>
         </p>
       {%- endif -%}
       {%- if site.phone -%}
@@ -97,7 +97,7 @@
       {%- endif -%}
       {%- if site.website -%}
         <p>
-          Web: {% include a.html href=site.website %}{{ site.website | escape }}</a>
+          Web : {% include a.html href=site.website %}{{ site.website | escape }}</a>
         </p>
       {%- endif -%}
     </div>
