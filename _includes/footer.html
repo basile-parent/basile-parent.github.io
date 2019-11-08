@@ -1,10 +1,6 @@
 <div class="container footer-container">
   <p>
-    This is a test
     {{ site.name | escape }} -
-    <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
-    {%- if site.footer_show_references -%}
-      &nbsp;- References on request
-    {%- endif -%}
+    <a href="mailto:{{ site.email | encode_email }}" target="_blank">{{ site.email_label }}</a>
   </p>
 </div>

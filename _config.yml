@@ -5,7 +5,8 @@ repository: Git repository where your resume will be hosted, only required if yo
 # Personal info
 name: Your Name
 title: Your job title
-email: Your email (optional)
+email: Your@email.optional
+email_label: Contact me
 phone: Your phone number (optional)
 website: Your website (eg. https://google.com)(optional)
 
@@ -63,6 +64,7 @@ sass:
 
 plugins:
  - jekyll-seo-tag
+ - jekyll-email-protect
 
 exclude : [
   "Gemfile",
