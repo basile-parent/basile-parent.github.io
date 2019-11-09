@@ -1,9 +1,17 @@
 # Education Template
-- layout: left
-  name: Institution name
-  dates: Date Range (eg. 2016 - 2019)
-  qualification: Qualifications (eg. BA Performing Arts)
-  quote: >
-    Short institution or course description (optional)
-  description: | # this will include new lines to allow paragraphs
-    Description of qualification
+- layout: flex
+  name: Bac S
+  year: 2004
+  icon : fas fa-graduation-cap
+- layout: flex
+  name: DUT Informatique
+  year: 2006
+  icon : fas fa-graduation-cap
+- layout: flex
+  name: Master MIAGE
+  year: 2009
+  icon : fas fa-graduation-cap
+- layout: flex
+  name: Certification PSM I
+  year: 2018
+  icon : fas fa-certificate

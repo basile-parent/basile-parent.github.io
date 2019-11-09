@@ -32,3 +32,22 @@ ul.skills {
     }
   }
 }
+
+.education-container {
+  ul, li {
+    list-style-type : none;
+  }
+
+  ul {
+    display : flex;
+  }
+
+  li {
+    flex: 1;
+    text-align: center;
+  }
+
+  .icon { font-size : 4em;}
+  h4 { font-size : 1.7em;}
+  p { font-size : 1.3em; text-align: center; color: #999;}
+}
