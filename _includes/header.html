@@ -83,6 +83,13 @@
             </a>
           </li>
         {%- endif -%}
+        {%- if site.pdf_file -%}
+          <li>
+            <a target="_blank" href="{{ site.pdf_file | relative_url }}" class="button button--sacnite button--round-l">
+              <i class="fas fa-download" title="Télécharger mon CV au format PDF"></i>
+            </a>
+          </li>
+        {%- endif -%}
       </ul>
 
       {%- if site.email -%}
