@@ -1,0 +1,31 @@
+# Speaker Template
+- layout: flex
+  name: HTML5 / CSS3
+  year: 2015
+  icon : fab fa-html5
+  location: Proxiad
+- layout: flex
+  name: WebSockets
+  year: 2018
+  icon : fas fa-exchange-alt
+  location: Proxiad
+- layout: flex
+  name: Formation Spring
+  year: 2018
+  icon : fab fa-java
+  location: Client
+- layout: flex
+  name: Formation React
+  year: 2018
+  icon : fab fa-react
+  location: Proxiad
+- layout: flex
+  name: Tests unitaires
+  year: 2019
+  icon: fab fa-searchengin
+  location: Proxiad
+- layout: flex
+  name: Daily Meeting
+  year: 2019
+  icon : fas fa-users
+  location: Agile Tour Lille

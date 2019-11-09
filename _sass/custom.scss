@@ -1,27 +1,35 @@
+h3 {
+  margin-bottom: 40px !important;
+}
+
 .layout-top-middle p {
-  text-align : center;
+  text-align: center;
 }
 
 .description {
-  color : #999;
+  color: #999;
   font-style: italic;
 }
 
 summary {
-  cursor : pointer;
-  font-size : 1.3em;
+  cursor: pointer;
+  font-size: 1.3em;
   text-decoration: underline;
+  text-align: center;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul.skills {
-  margin : 0;
-  padding : 0;
-
   li {
-    display : inline-block;
-    border : 1px solid gray;
-    padding : 2px 4px;
-    border-radius : 3px;
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 2px 4px;
+    border-radius: 3px;
     vertical-align: middle;
     font-size: 80%;
     color: #fff;
@@ -33,21 +41,39 @@ ul.skills {
   }
 }
 
-.education-container {
-  ul, li {
-    list-style-type : none;
+.education-container, .speaker-container {
+  * {
+    text-align: center;
   }
 
   ul {
-    display : flex;
+    display: flex;
   }
 
   li {
     flex: 1;
-    text-align: center;
   }
 
-  .icon { font-size : 4em;}
-  h4 { font-size : 1.7em;}
-  p { font-size : 1.3em; text-align: center; color: #999;}
+  .icon {
+    font-size: 5em;
+  }
+
+  h4 {
+    font-size: 1.7em;
+  }
+
+  p {
+    margin: 0 !important;
+  }
+
+  .year {
+    font-size: 1.3em;
+    text-align: center;
+    color: #999;
+  }
+
+  .location {
+    font-size: 1.3em;
+    text-align: center;
+  }
 }

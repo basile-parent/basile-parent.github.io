@@ -1,10 +1,10 @@
 <div class="container education-container">
-  <h3>{{ site.education_title | default: "Education" }}</h3>
-  <ul>
-  {% for education in site.data.education %}
-    <li>
-      {% include {{ education.layout | default: 'left' | append: ".html" }} item=education %}
-    </li>
-  {% endfor %}
-  </ul>
+    <h3>{{ site.education_title | default: "Education" }}</h3>
+    <div class="row clearfix">
+        {% for education in site.data.education %}
+        <div class="col-md-3 col-xs-6 col-print-12">
+            {% include {{ education.layout | default: 'left' | append: ".html" }} item=education %}
+        </div>
+        {% endfor %}
+    </div>
 </div>

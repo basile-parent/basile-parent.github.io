@@ -1,0 +1,10 @@
+<div class="container speaker-container">
+    <h3>{{ site.speaker_title | default: "Speaker" }}</h3>
+    <div class="row clearfix">
+        {% for talk in site.data.talks %}
+        <div class="col-xl-2 col-md-2 col-sm-3 col-xs-4 col-print-12">
+            {% include {{ education.layout | default: 'flex' | append: ".html" }} item=talk %}
+        </div>
+        {% endfor %}
+    </div>
+</div>

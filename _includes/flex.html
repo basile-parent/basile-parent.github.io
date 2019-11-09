@@ -1,8 +1,9 @@
-<div class="row clearfix layout layout-flex">
+<div>
     <span class="icon">
         {%- if include.item.icon -%}<i class="{{ include.item.icon }}" title="{{ include.item.name }}"></i>{%- endif -%}
     </span>
     {%- if include.item.name -%}<h4>{{ include.item.name }}</h4>{%- endif -%}
-    {%- if include.item.year -%}<p>{{ include.item.year }}</p>{%- endif -%}
+    {%- if include.item.year -%}<p class="year">{{ include.item.year }}</p>{%- endif -%}
+    {%- if include.item.location -%}<p class="location">{{ include.item.location }}</p>{%- endif -%}
 
 </div>
