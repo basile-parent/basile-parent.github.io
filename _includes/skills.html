@@ -1,0 +1,13 @@
+<div class="container skills-container">
+    <h3>{{ site.skills_title | default: "Skills" }}</h3>
+    {% for skillGroup in site.data.skills %}
+        <div class="col-md-4 col-sm-6 col-xs-12 skill-group">
+            <h4>{{ skillGroup.name }}</h4>
+            <ul>
+            {% for skill in skillGroup.items %}
+                {% include skill.html item=skill %}
+            {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+</div>

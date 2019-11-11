@@ -1,8 +1,10 @@
 <div class="container more-container">
   <h3>{{ site.more_title | default: "A Little More About Me" }}</h3>
   <div class="row clearfix">
-    <div class="col-md-12">
-      {{ site.more_content | strip | markdownify }}
+    {% for hobby in site.data.more %}
+    <div class="col-md-3 col-xs-6 col-print-12">
+      {% include {{ hobby.layout | default: 'left' | append: ".html" }} item=hobby %}
     </div>
+    {% endfor %}
   </div>
 </div>

@@ -1,0 +1,14 @@
+<li class="skill">
+    <p>
+        {{ include.item.name }}
+        {%- if include.item.name -%}
+            {% for i in (1..include.item.level) %}
+                <i class="fas fa-check-circle" title="{{ include.item.level }} / 5"></i>
+            {% endfor %}
+            {% for i in (include.item.level..4) %}
+                <i class="fas fa-circle" title="{{ include.item.level }} / 5"></i>
+            {% endfor %}
+        {%- endif -%}
+    </p>
+    <p class="description">{{ include.item.description }}&nbsp;</p>
+</li>

@@ -41,7 +41,7 @@ ul.skills {
   }
 }
 
-.education-container, .speaker-container {
+.education-container, .speaker-container, .more-container {
   * {
     text-align: center;
   }
@@ -55,7 +55,12 @@ ul.skills {
   }
 
   .icon {
-    font-size: 5em;
+    i {
+      font-size: 5em;
+    }
+    img {
+      height : 5em;
+    }
   }
 
   h4 {
@@ -82,4 +87,28 @@ ul.skills {
 .footer-container img{
   width : 120px;
   opacity: 0.85;
+}
+
+.projects-container {
+  h4 {
+    .github-icon {
+      font-size : 0.6em;
+    }
+  }
+}
+
+.skills-container {
+  h3 {
+    margin-bottom: 0 !important;
+  }
+
+  .skill-group {
+    margin-top : 40px;
+
+    p {
+      font-size : 1em;
+      margin: 0;
+    }
+  }
+
 }

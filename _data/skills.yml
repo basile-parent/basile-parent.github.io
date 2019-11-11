@@ -1,0 +1,60 @@
+- name: Technique
+  items:
+  - name: J2EE
+    # icon:
+    level: 4
+    description: Spring (Boot, Data, Security, etc.), Hibernate, JPA
+  - name: Javascript
+    # icon:
+    level: 4
+    description: ES6+, programmation fonctionnelle, ...
+  - name: React
+    # icon:
+    level: 3
+    description: Redux, hooks, routeur, ...
+  - name: Vue.js
+    # icon:
+    level: 2
+    # description:
+  - name: Docker
+    # icon:
+    level: 2
+    # description:
+  - name: CD/CI
+    # icon:
+    level: 2
+    # description:
+- name: Agile
+  items:
+  - name: Scrum
+    # icon:
+    level: 5
+    # description:
+  - layout: skill
+    name: Kanban
+    # icon:
+    level: 3
+    # description:
+  - layout: skill
+    name: Animation d'ateliers
+    # icon:
+    level: 4
+    description: Rituels, story mapping, serious games, ...
+- name: Savoir-être
+  items:
+  - name: Formation
+    # icon:
+    level: 5
+    description: Formation technique, accompagnement à la transformation agile, ...
+  - name: Coaching
+    # icon:
+    level: 5
+    # description:
+  - name: Relationnel
+    # icon:
+    level: 5
+    # description:
+  - name: Partage de connaissances
+    # icon:
+    # level: 5
+    description: Code review, dojo, ...

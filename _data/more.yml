@@ -1,0 +1,16 @@
+- name : Cuisine
+  layout: flex
+  image: images/chef.png
+  description: Italien, Thaïlandais,
+- name : Danse de couple
+  layout: flex
+  image: images/danse.png
+  description: Professeur de Rock / Boogie / Lindy-Hop / Jazz Roots / West Coast Swing
+- name : Arts martiaux
+  layout: flex
+  image: images/martial-arts.png
+  description: Judo, Ju-jitsu, Krav Maga
+- name : Vie associative
+  layout: flex
+  icon : fas fa-users
+  description: Trésorier pendant 5 ans d'une association de rock, professeur, animateur, membre actif de diverses associations

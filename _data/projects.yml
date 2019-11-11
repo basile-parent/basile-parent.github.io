@@ -5,17 +5,17 @@
   description: Conception d'un Escape Game entièrement personnalisé, orienté métiers de l'informatique, pour les événements de recrutement Proxiad.
 - layout: top-middle
   name: GED vidéo
-  link: https://github.com/basile-parent/lecteur
+#  link: https://github.com/basile-parent/lecteur
   github: basile-parent/lecteur
   description: Gestion d'un référentiel de vidéo avec recherche multi-critères + import et conversion des vidéos
 - layout: top-middle
   name: Impro diapo
-  link: https://github.com/basile-parent/impro-photo
+#  link: https://github.com/basile-parent/impro-photo
   github: basile-parent/impro-photo
   description: Réalisation, pour l'association Le GIT, d'un logiciel sous licence libre de gestion et d'affichage d'un spectacle d'impro orienté sur les photographies (Impro Diapo ©)
 - layout: top-middle
   name: ITunes Web IHM
-  link: https://github.com/basile-parent/itunes-parser
+#  link: https://github.com/basile-parent/itunes-parser
   github: basile-parent/itunes-parser
   # quote:
   description: IHM Web de gestion d'une collection ITunes + lecteur de musique intéractif avec conversion des fichiers

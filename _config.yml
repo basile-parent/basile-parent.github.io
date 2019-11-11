@@ -4,7 +4,7 @@ favicon: images/icone.png
 logo: images/logo-perso.png
 
 # Personal info
-name: Basile Parent (en construction)
+name: Basile Parent
 title: Scrum Master / Développeur Full Stack
 email: test@test.fr
 email_label: Contactez-moi
@@ -38,7 +38,10 @@ about_content: | # this will include new lines to allow paragraphs
     - Images
 
 # Projects Section
-# projects_title: Projects #(Use this to override about projects section title)
+projects_title: Projets perso
+
+# Skills Section
+skills_title: Compétences
 
 # Experience Section
 experience_title: Expériences
@@ -50,7 +53,7 @@ education_title: Formation
 speaker_title: Talks  / Conférences / Formations
 
 # More Section
-more_title: Un peu plus sur moi
+more_title: Loisirs
 more_content: | # this will include new lines to allow paragraphs
   This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
 
