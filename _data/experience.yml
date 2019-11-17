@@ -21,19 +21,19 @@
         month: Oct
         year: 2018
       description: |
-        <ul>
-          <li>Réalisation d'évolutions sur l'outil de dématérialisation et sur la chaîne de traitement des données.</li>
-          <li>Mise en place d'une authentification unique pour toutes les applications de la plateforme.</li>
-          <li>Coaching agile</li>
-          <li>Mise en place des rituels</li>
-          <li>Aide à la rédaction d'un backlog</li>
-          <li>Organisation en feature factory</li>
-          <li>Participation aux ateliers de conception (techniques et fonctionnels) des futurs projets.</li>
-          <li>Animation d'ateliers : priorisation, story mapping, etc.</li>
-          <li>Prise en charge des validations des développements.</li>
-        </ul>
+        - Réalisation d'évolutions sur l'outil de dématérialisation et sur la chaîne de traitement des données.
+        - Mise en place d'une authentification unique pour toutes les applications de la plateforme.
+        - Coaching agile
+        - Mise en place des rituels
+        - Aide à la rédaction d'un backlog
+        - Organisation en feature factory
+        - Participation aux ateliers de conception (techniques et fonctionnels) des futurs projets.
+        - Animation d'ateliers : priorisation, story mapping, etc.
+        - Prise en charge des validations des développements.
       skills:
         - name: J2EE
+          icon: fab fa-java
+        - name: Spring
           icon: fab fa-java
         - name: Python
           icon: fab fa-python
@@ -56,11 +56,9 @@
         month: Juin
         year: 2018
       description: |
-        <ul>
-          <li>Renfort sur le support du programme Guide Vocal (plateforme de création de répondeurs personnalisés).</li>
-          <li>Animation d'atelier de découverte (Spring, Lombok, TU)</li>
-          <li>Ateliers de conception d'améliorations / refontes techinques</li>
-        </ul>
+        - Renfort sur le support du programme Guide Vocal (plateforme de création de répondeurs personnalisés).
+        - Animation d'atelier de découverte (Spring, Lombok, TU)
+        - Ateliers de conception d'améliorations / refontes techinques
       skills:
         - name: J2EE
           icon: fab fa-java
@@ -76,17 +74,17 @@
         year: 2015
       description: |
         Refonte importante d'une application existante de gestion du pilotage rayon des vendeurs en magasin.
-        <ul>
-          <li>Compréhension du besoin métier et construction du product backlog en collaboration avec le PO</li>
-          <li>Organisation d'ateliers d'analyse avec le PO</li>
-          <li>Mise en place du cadre Scrum</li>
-          <li>Animation des rituels</li>
-          <li>Organisation, estimation et priorisation du backlog pour découpage en Sprint</li>
-          <li>Gestion et animation de l'environnement JIRA dédié au projet (construction de Dashboard, de filtres, organisation des JIRAs, organisation de la saisie des temps de l'équipe)</li>
-          <li>Développements front (React / Javascript) et back (Java / Spring Boot)</li>
-        </ul>
+        - Compréhension du besoin métier et construction du product backlog en collaboration avec le PO
+        - Organisation d'ateliers d'analyse avec le PO
+        - Mise en place du cadre Scrum
+        - Animation des rituels
+        - Organisation, estimation et priorisation du backlog pour découpage en Sprint
+        - Gestion et animation de l'environnement JIRA dédié au projet (construction de Dashboard, de filtres, organisation des JIRAs, organisation de la saisie des temps de l'équipe)
+        - Développements front (React / Javascript) et back (Java / Spring Boot)
       skills:
         - name: J2EE
+          icon: fab fa-java
+        - name: Spring
           icon: fab fa-java
         - name: React
           icon: fab fa-react
@@ -112,12 +110,11 @@
         year: 2015
       description: |
         Migration d'une application de WebSphere vers Tomcat 7 :
-        <ul>
-          <li>Gestion de la migration vers Spring, des erreurs de compatibilité</li>
-          <li>migration des appels MQSeries vers des WS REST</li>
-          <li>Mise en forme multi-navigateurs</li>
-        </ul>
-        + projets internes au CDS Proxiad.
+        - Gestion de la migration vers Spring, des erreurs de compatibilité
+        - Migration des appels MQSeries vers des WS REST
+        - Mise en forme multi-navigateurs
+
+        \+ projets internes au CDS Proxiad
       skills:
         - name: J2EE
           icon: fab fa-java
@@ -135,12 +132,10 @@
         year: 2014
       description: |
         Maintenance d'une application de simulation de coûts destinée au service Achat d'Auchan.
-        <ul>
-          <li>Montée en compétence et documentation de l'application (connaissances perdues)</li>
-          <li>Conception de solutions aux problèmes liés au changement de nomenclature</li>
-          <li>Mise en place de solutions techniques : tables de transcodage, groupes de négociation</li>
-          <li>Réalisation et mise en place de PAF (Plan d'Affaires = export Excel)</li>
-        </ul>
+        - Montée en compétence et documentation de l'application (connaissances perdues)
+        - Conception de solutions aux problèmes liés au changement de nomenclature
+        - Mise en place de solutions techniques : tables de transcodage, groupes de négociation
+        - Réalisation et mise en place de PAF (Plan d'Affaires = export Excel)
       skills:
         - name: Java
           icon: fab fa-java
@@ -171,12 +166,10 @@
         year: 2014
       description: |
         Renfort de l'équipe d'intégration des applications d'encaissement.
-        <ul>
-          <li>Intégration des solutions d'encaissement / fidélité dans les magasins</li>
-          <li>Réalisation de solutions de contournement (Shell)</li>
-          <li>Transcription de batchs Java en Shell</li>
-          <li>Migration de version des applicatifs</li>
-        </ul>
+        - Intégration des solutions d'encaissement / fidélité dans les magasins
+        - Réalisation de solutions de contournement (Shell)
+        - Transcription de batchs Java en Shell
+        - Migration de version des applicatifs
       skills:
         - name: Shell
           icon: fas fa-terminal
@@ -192,10 +185,8 @@
         year: 2013
       description: |
         Mise en place du changement de nomenclature sur toutes les applications d'un domaine (Approlog)
-        <ul>
-          <li>Grosse analyse de l'existent, recueil d'informations, parcours de documents</li>
-          <li>Création d'un logiciel de parsing et génération de requêtes SQL pour les futurs changements de nomenclature</li>
-        </ul>
+        - Grosse analyse de l'existent, recueil d'informations, parcours de documents
+        - Création d'un logiciel de parsing et génération de requêtes SQL pour les futurs changements de nomenclature
       skills:
         - name: PL/SQL
           icon: fas fa-database
@@ -209,9 +200,7 @@
         year: 2012
       description: |
         Renfort de l'équipe e-commerce (Auchan Drive / Chronodrive) sur la partie migration de données :
-        <ul>
-          <li>Automatisation de la migration des données vers la nouvelle plateforme (triggers + PL/SQL + ETL)</li>
-        </ul>
+        - Automatisation de la migration des données vers la nouvelle plateforme (triggers + PL/SQL + ETL)
       skills:
         - name: SQL
           icon: fas fa-database
@@ -258,25 +247,19 @@
         year: 2011
       description: |
         Réalisation d'un outil de devis pour les parois de douche en magasin afin de faciliter les ventes et éviter les retours fournisseurs.
-        <ul>
-          <li>Conception BDD et intégration d'un catalogue complexe.</li>
-          <li>Développements</li>
-          <li>Organisation en sprints</li>
-          <li>Edition d'exports PDF</li>
-        </ul>
+        - Conception BDD et intégration d'un catalogue complexe.
+        - Développements
+        - Organisation en sprints
+        - Edition d'exports PDF
 
         Réalisation d'un CRUD sur les matériaux disponibles pour le pôle innovation.
-        <ul>
-          <li>Indexation automatique de fiches PDF pour recherches par critères.</li>
-        </ul>
+        - Indexation automatique de fiches PDF pour recherches par critères.
 
         Réalisation d'un logiciel de gestion des bons de commande et de factures pour les prestataires de Castorama.
-        <ul>
-          <li>Conception et développements</li>
-          <li>Organisation en sprints</li>
-          <li>Animation de séances de priorisation et d'estimations (Poker Planning)</li>
-          <li>Edition de reporting XLS avec statistiques</li>
-        </ul>
+        - Conception et développements
+        - Organisation en sprints
+        - Animation de séances de priorisation et d'estimations (Poker Planning)
+        - Edition de reporting XLS avec statistiques
       skills:
         - name: J2EE
           icon: fab fa-java
@@ -313,11 +296,9 @@
         month: Sept
         year: 2009
       description: |
-        <ul>
-          <li>Maintenance et évolutions sur l'application de génération de libellés imprimables.</li>
-          <li>Gestion des articles non conformes en magasin et des Actions Correctives Qualité (ACQ) associées. Référentiel de procédures à suivre.</li>
-          <li>Gestion de la confiance fournisseurs : détermination d'un indice de confiance d'un fournisseur selon la qualité de ses livraisons, calcul de la fréquence de contrôle en conséquent, planning de contrôle des fournisseurs.</li>
-        </ul>
+        - Maintenance et évolutions sur l'application de génération de libellés imprimables.
+        - Gestion des articles non conformes en magasin et des Actions Correctives Qualité (ACQ) associées. Référentiel de procédures à suivre.
+        - Gestion de la confiance fournisseurs : détermination d'un indice de confiance d'un fournisseur selon la qualité de ses livraisons, calcul de la fréquence de contrôle en conséquent, planning de contrôle des fournisseurs.
       skills:
         - name: J2EE
           icon: fab fa-java

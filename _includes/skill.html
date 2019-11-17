@@ -1,7 +1,7 @@
 <li class="skill">
     <p>
         {{ include.item.name }}
-        {%- if include.item.name -%}
+        {%- if include.item.level -%}
             {% for i in (1..include.item.level) %}
                 <i class="fas fa-check-circle" title="{{ include.item.level }} / 5"></i>
             {% endfor %}

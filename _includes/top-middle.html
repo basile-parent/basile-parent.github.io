@@ -33,7 +33,7 @@
     {%- if include.item.missions -%}
     <div class="col-xs-12 col-print-12 missions">
         <details>
-            <summary>Missions : (cliquez pour agrandir)</summary>
+            <summary>{{ site.missions_details_title }}</summary>
             <div id="timeline" class="col-xs-12 col-print-12">
                 <div class="timeline">
                     {% for mission in include.item.missions %}
@@ -49,11 +49,11 @@
                                     <span class="timeline__title">{{mission.title}}</span>
                                     <span class="timeline__duration">({{mission.duration}})</span>
                                 </h2>
-                                <p>{{mission.description}}</p>
+                                <p>{{mission.description | strip | markdownify}}</p>
                                 {%- if mission.skills -%}
                                     <ul class="skills">
                                         {% for skill in mission.skills %}
-                                        <li><i class="{{ skill.icon }}" title="{{ skill.name }}"></i>{{skill.name}}</li>
+                                        <li class="skill"><i class="{{ skill.icon }}" title="{{ skill.name }}"></i>{{skill.name}}</li>
                                         {% endfor %}
                                     </ul>
                                 {%- endif -%}

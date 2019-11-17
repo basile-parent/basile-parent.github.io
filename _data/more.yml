@@ -1,7 +1,7 @@
 - name : Cuisine
   layout: flex
   image: images/chef.png
-  description: Italien, Thaïlandais,
+  description: Italien, Thaïlandais, Ch'ti, etc.
 - name : Danse de couple
   layout: flex
   image: images/danse.png

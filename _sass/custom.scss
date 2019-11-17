@@ -110,5 +110,11 @@ ul.skills {
       margin: 0;
     }
   }
+}
 
+.experience-container {
+  li:not(.skill) {
+    list-style-type: square;
+    margin-left: 17px;
+  }
 }
