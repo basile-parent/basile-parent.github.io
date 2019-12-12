@@ -10,7 +10,7 @@ jobs:
       - name: Echo
         run: |
           echo secrets : ${{ secrets.JEKYLL_PAT }}
-          TOKEN=${secrets.JEKYLL_PAT}
+          TOKEN=${{secrets.JEKYLL_PAT}}
 
           remote_repo="https://${TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           remote_branch="master"
