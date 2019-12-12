@@ -3,23 +3,14 @@ name: Build and deploy
 on:
   push:
     branches:
-      - master
+      - gh-pages
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Echo
-        run: |
-          echo GITHUB_WORKFLOW : $GITHUB_WORKFLOW
-          echo GITHUB_ACTION : $GITHUB_ACTION
-          echo GITHUB_ACTIONS : $GITHUB_ACTIONS
-          echo GITHUB_ACTOR : $GITHUB_ACTOR
-          echo GITHUB_REPOSITORY : $GITHUB_REPOSITORY
-          echo GITHUB_WORKSPACE : $GITHUB_WORKSPACE
-          pwd
-          ls -l
+      - name: Checkout project
+        uses: actions/checkout@v1
       - name: Build and deploy
         uses: helaili/jekyll-action@master
         with:
