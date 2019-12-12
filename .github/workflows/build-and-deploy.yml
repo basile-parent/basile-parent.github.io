@@ -1,0 +1,15 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and deploy
+        uses: helaili/jekyll-action@master
+        with:
+          JEKYLL_PAT: toto
