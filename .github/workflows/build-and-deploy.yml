@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Build and deploy
 
 on:
   push:
@@ -9,6 +9,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Echo
+        run: |
+          echo GITHUB_WORKFLOW : $GITHUB_WORKFLOW
+          echo GITHUB_ACTION : $GITHUB_ACTION
+          echo GITHUB_ACTIONS : $GITHUB_ACTIONS
+          echo GITHUB_ACTOR : $GITHUB_ACTOR
+          echo GITHUB_REPOSITORY : $GITHUB_REPOSITORY
+          echo GITHUB_WORKSPACE : $GITHUB_WORKSPACE
       - name: Build and deploy
         uses: helaili/jekyll-action@master
         with:
