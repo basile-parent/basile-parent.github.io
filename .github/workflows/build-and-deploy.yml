@@ -11,8 +11,5 @@ jobs:
     steps:
       - name: Checkout project
         uses: actions/checkout@v1
-      - name: echo
-        run: |
-          grep repository _config.yml
       - name: Build and deploy
         uses: basile-parent/jekyll-action@master
