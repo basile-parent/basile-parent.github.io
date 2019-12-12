@@ -10,4 +10,18 @@ jobs:
       - name: Echo
         run: |
           echo secrets : ${{ secrets.JEKYLL_PAT }}
-          git status
+          TOKEN=${secrets.JEKYLL_PAT}
+
+          remote_repo="https://${TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          remote_branch="master"
+
+          git init
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          touch test_file.txt
+          echo "Some text here." > test_file.txt
+          git add .
+          git commit -m 'Test push'
+          echo Push to $remote_repo / $remote_branch
+          git push --force $remote_repo master:$remote_branch
+          rm -fr .git
