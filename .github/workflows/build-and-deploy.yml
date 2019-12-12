@@ -9,10 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout project
+        uses: actions/checkout@v1
       - name: echo
         run: |
           grep repository _config.yml
-      - name: Checkout project
-        uses: actions/checkout@v1
       - name: Build and deploy
         uses: basile-parent/jekyll-action@master
