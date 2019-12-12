@@ -10,3 +10,4 @@ jobs:
       - name: Echo
         run: |
           echo secrets : ${{ secrets.JEKYLL_PAT }}
+          echo not secrets : ${{ secrets.ANYTHING_ELSE }}
