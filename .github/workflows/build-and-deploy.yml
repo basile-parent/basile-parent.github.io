@@ -9,6 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Echo
         run: |
           echo GITHUB_WORKFLOW : $GITHUB_WORKFLOW
@@ -18,7 +19,7 @@ jobs:
           echo GITHUB_REPOSITORY : $GITHUB_REPOSITORY
           echo GITHUB_WORKSPACE : $GITHUB_WORKSPACE
           pwd
-          ls -l ..
+          ls -l
       - name: Build and deploy
         uses: helaili/jekyll-action@master
         with:
