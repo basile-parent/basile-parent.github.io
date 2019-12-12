@@ -17,6 +17,8 @@ jobs:
           echo GITHUB_ACTOR : $GITHUB_ACTOR
           echo GITHUB_REPOSITORY : $GITHUB_REPOSITORY
           echo GITHUB_WORKSPACE : $GITHUB_WORKSPACE
+          pwd
+          ls -l
       - name: Build and deploy
         uses: helaili/jekyll-action@master
         with:
