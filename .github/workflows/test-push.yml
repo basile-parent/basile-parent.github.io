@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Echo
         run: |
-          echo secrets : ${{ secrets }}
+          echo secrets : ${{ secrets.JEKYLL_PAT }}
