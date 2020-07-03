@@ -1,9 +1,41 @@
-# Experience template
+- layout: top-middle
+  company: Atecna
+  link: https://www.atecna.fr/
+  job_title: Scrum Master
+  dates: Mars 2020 - Maintenant
+  # quote: >
+  #  Short description of the company (optional)
+  description: |
+    <i class="fas fa-angle-double-right"></i> Scrum Master
+    <i class="fas fa-angle-double-right"></i> Formateur Agile
+    <i class="fas fa-angle-double-right"></i> Speaker
+    <i class="fas fa-angle-double-right"></i> Membre de la communauté agile
+  missions:
+    - customer: Decathlon
+      title: Scrum Master
+      duration: Depuis Mars 2020
+      start_date:
+        month: Mar
+        year: 2020
+      description: |
+        - Scrum Master sur une équipe de 8 personnes
+        - Synchronisation entre 3 équipes Scrum
+        - Coaching agile
+        - Expertise technique Javascript
+        - Mise en place d'un système de documentation simplifié avec déploiement automatique
+      skills:
+        - name: Agile
+          icon: far fa-sticky-note
+        - name: Javascript
+          icon: fab fa-js-square
+        - name: J2EE
+          icon: fab fa-java
+
 - layout: top-middle
   company: Proxiad
   # link: Link to company (optional)
   job_title: Développeur Full Stack / Scrum Master
-  dates: Juillet 2014 - Maintenant
+  dates: Juillet 2014 - Mars 2020
   # quote: >
   #  Short description of the company (optional)
   description: |

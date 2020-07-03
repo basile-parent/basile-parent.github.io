@@ -1,5 +1,9 @@
 # Speaker Template
 - layout: flex
+  name: Estimations
+  year: soon
+  icon : fab fa-money-bill-alt
+- layout: flex
   name: HTML5 / CSS3
   year: 2015
   icon : fab fa-html5
