@@ -124,25 +124,30 @@ service:
   enable : true
   title : "Talks / Conférences / Formations"
   service_list:
+    - name: Estimations
+      year: Bientôt
+      icon: fab fa-money-bill-alt
+#      icon: fa fa-twitter
+      youtube: #
     - name: Daily Meeting
       year: 2019
-      image: "images/icons/web-development.png"
+      icon: fa fa-users
       youtube: #
     - name: Tests unitaires
       year: 2019
-      image: "images/icons/graphic-design.png"
+      icon: fab fa-searchengin
     - name: Formation React
       year: 2018
-      image: "images/icons/dbms.png"
+      icon: fab fa-react
     - name: Formation Spring
       year: 2018
-      image: "images/icons/software-development.png"
+      icon: fab fa-java
     - name: WebSockets
       year: 2018
-      image: "images/icons/marketing.png"
+      icon: fas fa-exchange-alt
     - name: HTML5 - CSS 3
       year: 2015
-      image: "images/icons/mobile-app.png"
+      icon: fab fa-html5
 
 
 ############################## call to action #########################
