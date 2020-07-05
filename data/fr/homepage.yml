@@ -10,13 +10,13 @@ hero:
 
   # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
   socials:
-    - icon: fa-twitter
+    - icon: fab fa-twitter
       link: https://twitter.com/basile_parent
-    - icon: fa-github
+    - icon: fab fa-github
       link: https://github.com/basile-parent
-    - icon: fa-linkedin
+    - icon: fab fa-linkedin
       link: https://www.linkedin.com/in/basile-parent-089962190/
-    - icon: fa-youtube
+    - icon: fab fa-youtube
       link: https://www.youtube.com/channel%2FUCc3QNmcoP0B_qwAn9Y9YyTA
 
   # slider background image loop
@@ -37,7 +37,7 @@ fullscreen_nav:
   enable : true
   bg_image : "images/backgrounds/full-nav-bg.jpg"
   first_name : "10th Doctor"
-  last_name : "BASILE"
+  last_name : "Basile"
   
 
 ########################### About ##################################
@@ -87,7 +87,7 @@ skill:
   categories:
     - title: Technique
       skill_list:
-        - name : "J2E"
+        - name : "J2EE"
           parcentage : "90%"
         - name : "Javascript"
           parcentage : "90%"
@@ -126,7 +126,7 @@ service:
   service_list:
     - name: Estimations
       year: Bientôt
-      icon: fab fa-money-bill-alt
+      icon: fas fa-money-bill-alt
 #      icon: fa fa-twitter
       youtube: #
     - name: Daily Meeting
@@ -161,155 +161,94 @@ call_to_action:
     link : "#contact"
 
 
-############################# portfolio ################################
+############################## portfolio ################################
 portfolio:
   enable : true
-  title : "PORTFOLIO"
+  title : "Projets perso"
   portfolio_list:
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item1.jpg"
-      date : "Feb 2018"
+    - name : "GED vidéo"
+      image : "images/portfolio/lecteur.jpg"
+      date : "2010"
       category : "Web Development"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item2.jpg"
-      date : "Feb 2018"
+    - name : "Radio réveil avec API météo"
+      image : "images/portfolio/radio-reveil-js.jpg"
+      date : "2015"
       category : "Web Development"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item3.jpg"
-      date : "Feb 2018"
+    - name : "Impro photo"
+      image : "images/portfolio/impro-photo.jpg"
+      date : "2017"
       category : "Web Development"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item4.jpg"
-      date : "Feb 2018"
+    - name : "Escape Game"
+      image : "images/portfolio/escape-game.jpg"
+      date : "2018"
       category : "Web Development"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item5.jpg"
-      date : "Feb 2018"
+    - name : "Gateway authentification"
+      image : "images/portfolio/gateway.jpg"
+      date : "2019"
       category : "Web Development"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item6.jpg"
-      date : "Feb 2018"
+    - name : "Youdance (GED vidéo avec Elastid Search)"
+      image : "images/portfolio/youdance.jpg"
+      date : "2019"
       category : "Web Development"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item7.jpg"
-      date : "Feb 2018"
-      category : "Graphics"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item8.jpg"
-      date : "Feb 2018"
-      category : "Graphics"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item9.jpg"
-      date : "Feb 2018"
-      category : "Database"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item10.jpg"
-      date : "Feb 2018"
-      category : "Database"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item11.jpg"
-      date : "Feb 2018"
-      category : "Database"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item12.jpg"
-      date : "Feb 2018"
-      category : "Graphics"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item13.jpg"
-      date : "Feb 2018"
-      category : "Graphics"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item14.jpg"
-      date : "Feb 2018"
-      category : "Graphics"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/item15.jpg"
-      date : "Feb 2018"
-      category : "Graphics"
+    - name : "Remote agile energizers"
+      image : "images/portfolio/walk-stop.jpg"
+      date : "2020"
+      category : "Web Development"
 
 
-################################# Testimonial #########################33
-testimonial:
-  enable : true
-  title : "TESTIMONIALS"
-  testimonial_slider:
-    # slider item loop
-    - name : "Micheal Clark"
-      image : "images/clients/client1.jpg"
-      designation : "CEO, RANDOM COMPANY"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-                omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
-                
-    # slider item loop
-    - name : "Peter Parker"
-      image : "images/clients/client2.jpg"
-      designation : "CEO, RANDOM COMPANY"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-                omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
-                
-    # slider item loop
-    - name : "Jessica Jones"
-      image : "images/clients/client3.jpg"
-      designation : "CEO, RANDOM COMPANY"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-                omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
-
-
-######################### funfacts #############################3
-funfacts:
-  enable : true
-  funfacts_list:
-    # funfacts item loop
-    - name : "HANDS TO WORK"
-      image : "images/icons/works.png"
-      count : "100"
-      
-    # funfacts item loop
-    - name : "HAPPY CLIENT"
-      image : "images/icons/happy.png"
-      count : "200"
-      
-    # funfacts item loop
-    - name : "FINISHED PROJECT"
-      image : "images/icons/project.png"
-      count : "250"
-      
-    # funfacts item loop
-    - name : "CUPS OF COFFEE"
-      image : "images/icons/coffee.png"
-      count : "150"
-
-
-############################## contact ###########################
-contact:
-  enable : true
-  title : "SAY HELLO!"
+################################## Testimonial #########################33
+#testimonial:
+#  enable : true
+#  title : "TESTIMONIALS"
+#  testimonial_slider:
+#    # slider item loop
+#    - name : "Micheal Clark"
+#      image : "images/clients/client1.jpg"
+#      designation : "CEO, RANDOM COMPANY"
+#      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
+#                omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
+#
+#    # slider item loop
+#    - name : "Peter Parker"
+#      image : "images/clients/client2.jpg"
+#      designation : "CEO, RANDOM COMPANY"
+#      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
+#                omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
+#
+#    # slider item loop
+#    - name : "Jessica Jones"
+#      image : "images/clients/client3.jpg"
+#      designation : "CEO, RANDOM COMPANY"
+#      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
+#                omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
+#
+#
+########################## funfacts #############################
+#funfacts:
+#  enable : true
+#  funfacts_list:
+#    # funfacts item loop
+#    - name : "HANDS TO WORK"
+#      image : "images/icons/works.png"
+#      count : "100"
+#
+#    # funfacts item loop
+#    - name : "HAPPY CLIENT"
+#      image : "images/icons/happy.png"
+#      count : "200"
+#
+#    # funfacts item loop
+#    - name : "FINISHED PROJECT"
+#      image : "images/icons/project.png"
+#      count : "250"
+#
+#    # funfacts item loop
+#    - name : "CUPS OF COFFEE"
+#      image : "images/icons/coffee.png"
+#      count : "150"
+#
+#
+############################### contact ###########################
+#contact:
+#  enable : true
+#  title : "SAY HELLO!"
