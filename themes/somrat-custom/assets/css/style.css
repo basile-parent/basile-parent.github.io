@@ -1027,11 +1027,13 @@ ul.experience-chart h4 {
 .single-experience {
   position: relative;
   top: -2px;
+  cursor: pointer;
 }
 
-.single-experience a {
+.single-experience .experience-details-button span {
   color: grey;
   font-style: italic;
+  font-weight: normal;
 }
 
 .single-experience ul.skills li {
@@ -1310,6 +1312,7 @@ ul.experience-chart h4 {
   display: none;
 }
 
+.experience-navigation,
 .portfolio-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1330,6 +1333,7 @@ ul.experience-chart h4 {
   display: inherit;
 }
 
+.experience-navigation li,
 .portfolio-navigation li {
   cursor: pointer;
   padding: 7px 14px;
@@ -1339,6 +1343,7 @@ ul.experience-chart h4 {
   margin: 0 5px;
 }
 
+.experience-navigation li.active,
 .portfolio-navigation li.active {
   background: #6f6f6f;
   color: #fff;

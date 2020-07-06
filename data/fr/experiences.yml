@@ -79,7 +79,9 @@ experience:
         icon: far fa-sticky-note
       - name: Postgresql
         icon: fas fa-database
-  - customer: Decathlon / BTwin
+      - name: Javascript
+        icon: fab fa-js-square
+  - company: Decathlon / BTwin
     job_title: Développeur Full Stack / Scrum Master
     dates: 2015-2018
     duration: 3 ans
