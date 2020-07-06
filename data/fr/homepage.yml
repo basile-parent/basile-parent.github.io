@@ -158,7 +158,7 @@ call_to_action:
   button:
     enable : true
     label : "Téléchargez mon CV!"
-    link : "#about"
+    link : "#about-me"
 
 
 ############################## portfolio ################################
