@@ -1,0 +1,143 @@
+# baseURL = "http://example.org/"
+languageCode = "fr-FR"
+title = "Basile Parent - Web developer / Scrum Master"
+theme = "somrat-custom"
+DefaultContentLanguage = "fr"
+
+#################### default parameters ################################
+[params]
+logo_light = "images/logo.png?ezvze"
+#logo_dark = "images/logo-dark.png"
+# Meta data
+description = "Scrum master / Développeur full stack senior"
+author = "bparent"
+# contact form action
+contact_form_action = "" # contact form works with https://formspree.io
+# Google Analitycs
+google_analitycs_id = "" # your id
+customCss = ["/main.css"]
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
+
+############################## navigation ###############################
+
+# main menu
+[[menu.main]]
+name = "Accueil"
+URL = "#home"
+weight = 1
+
+[[menu.main]]
+name = "A propos"
+URL = "#about-me"
+weight = 2
+
+[[menu.main]]
+name = "Experience"
+URL = "#experience"
+weight = 3
+
+[[menu.main]]
+name = "Compétences"
+URL = "#skills"
+weight = 4
+
+[[menu.main]]
+name = "Talks"
+URL = "#talks"
+weight = 5
+
+[[menu.main]]
+name = "Portfolio"
+URL = "#portfolio"
+weight = 6
+
+############################# social site ########################
+#[[params.social]]
+#icon = "fa-facebook-f" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+#link = "https://www.facebook.com/somrat.mac"
+
+[[params.social]]
+icon = "fa-twitter" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+link = "https://twitter.com/basile_parent"
+
+#[[params.social]]
+#icon = "fa-instagram" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+#link = "https://www.instagram.com/somrat_sorkar/"
+
+[[params.social]]
+icon = "fa-github" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+link = "https://github.com/basile-parent"
+
+[[params.social]]
+icon = "fa-linkedin" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+link = "https://www.linkedin.com/in/basile-parent-089962190/"
+
+[[params.social]]
+icon = "fa-youtube" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+link = "https://www.youtube.com/channel%2FUCc3QNmcoP0B_qwAn9Y9YyTA"
+
+
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/fontawesome/css/all.css"
+[[params.plugins.css]]
+link = "plugins/hover/hover.css"
+[[params.plugins.css]]
+link = "plugins/magnific-popup/magnific-popup.css"
+[[params.plugins.css]]
+link = "plugins/owl-carousel/owl.carousel.min.css"
+[[params.plugins.css]]
+link = "plugins/owl-carousel/owl.theme.default.min.css"
+[[params.plugins.css]]
+link = "plugins/text-animation/text-animation.css"
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/wow.min.js"
+[[params.plugins.js]]
+link = "plugins/text-animation/text-animation.js"
+[[params.plugins.js]]
+link = "plugins/jquery.waypoints.min.js"
+[[params.plugins.js]]
+link = "plugins/filterizr/jquery.filterizr.min.js"
+[[params.plugins.js]]
+link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
+[[params.plugins.js]]
+link = "plugins/owl-carousel/owl.carousel.min.js"
+
+
+#################################### English language #####################################
+#[Languages.en]
+#languageName = "En"
+#languageCode = "en-us"
+#contentDir = "content/english"
+#weight = 1
+#home = "Home"
+## copyright
+#copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
+
+
+################################### French language #####################################
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+contentDir = "content/french"
+weight = 2
+home = "Accueil"
+# copyright
+#copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"

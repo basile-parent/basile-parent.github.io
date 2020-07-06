@@ -1,0 +1,64 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.experiences.experience.enable }}
+{{ with $data.experiences.experience }}
+<div class="col-lg-6 col-sm-6 col-11 experience wow fadeInUp" id="experience" data-wow-duration="1.5s">
+    <h3>{{ .title }}</h3>
+    <div class="col-12 text-center">
+        <div class="experience_filtering wow fadeInUp" data-wow-duration="1.5s">
+            <i class="fas fa-arrows-alt-v" id="experience-expand-all" title="{{ .expand_info }}"></i>
+            <ul class="experience-navigation">
+                <li id="experience-filter-all" class="hvr-sweep-to-right active">Tous</li>
+                <li data-filter="J2EE, Java" class="hvr-sweep-to-right">J2EE</li>
+                <li data-filter="Javascript, Vue.js, React" class="hvr-sweep-to-right">JS</li>
+                <li data-filter="Agile" class="hvr-sweep-to-right">Agile</li>
+            </ul>
+        </div>
+    </div>
+    <ul class="experience-chart">
+        {{ range .experience_list }}
+        {{ $id := delimit (shuffle (seq 1 9)) "" }}
+        {{ $dataCategories := slice }}
+        {{ range .skills }}
+        {{ $dataCategories = $dataCategories | append .name }}
+        {{ end }}
+        <li id="experience_{{$id}}" experience-id="{{$id}}" class="experience-item" data-category="{{ $dataCategories }}">
+            <div class="single-experience">
+                <h4>{{ .job_title | markdownify }}</h4>
+                {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .dates }} (<span>{{ . | markdownify }}</span>) {{ end }}
+                {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+
+                <p class="experience-details-button">
+                    <span class="more_info">
+                        {{ $data.experiences.experience.more_info }}
+                    </span>
+                    <span class="less_info">
+                        {{ $data.experiences.experience.less_info }}
+                    </span>
+                </p>
+                <section class="details collapse">
+                    <p>
+                        {{ .description | markdownify }}
+                    </p>
+                    <ul class="skills" data-wow-duration="1.5s">
+                        {{ range .skills }}
+                        <li>
+                            <i class="{{ .icon }}"></i>
+                            {{ .name }}
+                        </li>
+                        {{ end }}
+                    </ul>
+                </section>
+            </div>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
+{{ end }}
+
+
+<script>
+
+</script>
