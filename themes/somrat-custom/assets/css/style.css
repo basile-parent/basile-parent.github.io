@@ -1051,6 +1051,19 @@ ul.experience-chart h4 {
 .single-experience .less_info {
   display: none;
 }
+
+.experience_filtering i {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 30px;
+  vertical-align: middle;
+  width: 30px;
+  cursor: pointer;
+  margin-right: 30px;
+  color: #4d4d4d;
+}
+
 /* ========= Start Skill ======= */
 
 .skill-progress-bar {

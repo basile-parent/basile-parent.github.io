@@ -4,6 +4,7 @@ experience:
   title : "Expériences"
   more_info: "Plus de détails"
   less_info: "Moins de détails"
+  expand_info: "Dérouler / enrouler tous les détails"
   experience_list:
   - company: Decathlon
     job_title: Scrum Master

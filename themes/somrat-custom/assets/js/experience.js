@@ -38,4 +38,19 @@
     }
   });
 
+  $("#experience-expand-all").on("click", function () {
+    const collapsedExperience = $(".experience-chart > li:not(.extended)");
+    if (collapsedExperience.length) {
+      $(`.experience-item .details`).slideDown();
+      $(`.experience-item`).addClass("extended");
+      $(`.experience-item .more_info`).hide();
+      $(`.experience-item .less_info`).show();
+    } else {
+      $(`.experience-item .details`).slideUp();
+      $(`.experience-item`).removeClass("extended");
+      $(`.experience-item .less_info`).hide();
+      $(`.experience-item .more_info`).show();
+    }
+  });
+
 }(jQuery));

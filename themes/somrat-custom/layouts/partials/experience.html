@@ -6,6 +6,7 @@
     <h3>{{ .title }}</h3>
     <div class="col-12 text-center">
         <div class="experience_filtering wow fadeInUp" data-wow-duration="1.5s">
+            <i class="fas fa-arrows-alt-v" id="experience-expand-all" title="{{ .expand_info }}"></i>
             <ul class="experience-navigation">
                 <li id="experience-filter-all" class="hvr-sweep-to-right active">Tous</li>
                 <li data-filter="J2EE, Java" class="hvr-sweep-to-right">J2EE</li>
@@ -21,7 +22,7 @@
         {{ range .skills }}
         {{ $dataCategories = $dataCategories | append .name }}
         {{ end }}
-        <li id="experience_{{$id}}" experience-id="{{$id}}" data-category="{{ $dataCategories }}">
+        <li id="experience_{{$id}}" experience-id="{{$id}}" class="experience-item" data-category="{{ $dataCategories }}">
             <div class="single-experience">
                 <h4>{{ .job_title | markdownify }}</h4>
                 {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
