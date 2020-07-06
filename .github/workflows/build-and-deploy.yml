@@ -1,15 +1,27 @@
-name: Build and deploy
+name: Build and deploy HUGO
 on:
   push:
     branches:
       - gh-pages
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - name: Checkout project
-        uses: actions/checkout@v1
-      - name: Build and deploy
-        uses: basile-parent/jekyll-action@master
-        env:
-          JEKYLL_PAT: ${{secrets.JEKYLL_PAT}}
+      - uses: actions/checkout@v1
+        with:
+          token: ${{ secrets.GH_PAGES_PAT }}
+          submodules: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.73.0'
+          extended: true
+      - name: Build
+        run: hugo --minify
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_PAGES_PAT }}
+          publish_dir: ./public
+          publish_branch: master
+          commit_message: ${{ github.event.head_commit.message }}
