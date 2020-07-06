@@ -1,0 +1,10 @@
+########################### Experience ##############################
+experience:
+  enable : true
+  title : "Expériences"
+  experience_list:
+    - name : "Développeur Ful Stack"
+      company : "Toto"
+      duration : "2016-2020"
+      content : "Test."
+

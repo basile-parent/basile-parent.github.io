@@ -1,0 +1,29 @@
+################################### Talks ##############################3
+talk:
+  enable : true
+  title : "Talks / Conférences / Formations"
+  talk_list:
+    - name: Estimations
+      year: Bientôt
+      icon: fas fa-money-bill-alt
+    #      icon: fa fa-twitter
+    - name: Daily Meeting
+      year: 2019
+      icon: fa fa-users
+      link: https://www.youtube.com/watch?v=H6zjMIaxAK8
+      link_icon: fab fa-youtube
+    - name: Tests unitaires
+      year: 2019
+      icon: fab fa-searchengin
+    - name: Formation React
+      year: 2018
+      icon: fab fa-react
+    - name: Formation Spring
+      year: 2018
+      icon: fab fa-java
+    - name: WebSockets
+      year: 2018
+      icon: fas fa-exchange-alt
+    - name: HTML5 - CSS 3
+      year: 2015
+      icon: fab fa-html5
