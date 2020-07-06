@@ -53,7 +53,7 @@ about:
   button:
     enable : true
     label : "Télécharger mon CV"
-    link : "/images/CV.pdf" # you can put your cv in static folder and give the path here.
+    link : "/images/CV.pdf"
 
 ########################### Experience ##############################
 experience:
@@ -128,11 +128,11 @@ service:
       year: Bientôt
       icon: fas fa-money-bill-alt
 #      icon: fa fa-twitter
-      youtube: #
     - name: Daily Meeting
       year: 2019
       icon: fa fa-users
-      youtube: #
+      link: https://www.youtube.com/watch?v=H6zjMIaxAK8
+      link_icon: fab fa-youtube
     - name: Tests unitaires
       year: 2019
       icon: fab fa-searchengin
@@ -154,11 +154,11 @@ service:
 call_to_action:
   enable : true
   bg_image : "images/backgrounds/need-service.jpg"
-  title : "NEED A SERVICE?"
+  title : "Contactez-moi"
   button:
     enable : true
-    label : "SAY HELLO!"
-    link : "#contact"
+    label : "Téléchargez mon CV!"
+    link : "#about"
 
 
 ############################## portfolio ################################
@@ -167,33 +167,45 @@ portfolio:
   title : "Projets perso"
   portfolio_list:
     - name : "GED vidéo"
-      image : "images/portfolio/lecteur.jpg"
+      image : "images/portfolio/web-dev/lecteur.jpg"
       date : "2010"
-      category : "Web Development"
+      category : "Développement Web"
     - name : "Radio réveil avec API météo"
-      image : "images/portfolio/radio-reveil-js.jpg"
+      image : "images/portfolio/web-dev/radio-reveil-js.jpg"
       date : "2015"
-      category : "Web Development"
-    - name : "Impro photo"
-      image : "images/portfolio/impro-photo.jpg"
+      category : "Développement Web"
+    - name : "Plaquette information CHR"
+      image : "images/portfolio/graphics/chr.jpg"
       date : "2017"
-      category : "Web Development"
+      category : "Créations graphiques"
+    - name : "Impro photo"
+      image : "images/portfolio/web-dev/impro-photo.jpg"
+      date : "2017"
+      category : "Développement Web"
+    - name : "Flyers asso"
+      image : "images/portfolio/graphics/flyer.jpg"
+      date : "2017"
+      category : "Créations graphiques"
     - name : "Escape Game"
-      image : "images/portfolio/escape-game.jpg"
+      image : "images/portfolio/web-dev/escape-game.jpg"
       date : "2018"
-      category : "Web Development"
+      category : "Développement Web"
+    - name : "Logo pro"
+      image : "images/portfolio/graphics/logo.jpg"
+      date : "2018"
+      category : "Créations graphiques"
     - name : "Gateway authentification"
-      image : "images/portfolio/gateway.jpg"
+      image : "images/portfolio/web-dev/gateway.jpg"
       date : "2019"
-      category : "Web Development"
+      category : "Développement Web"
     - name : "Youdance (GED vidéo avec Elastid Search)"
-      image : "images/portfolio/youdance.jpg"
+      image : "images/portfolio/web-dev/youdance.jpg"
       date : "2019"
-      category : "Web Development"
+      category : "Développement Web"
     - name : "Remote agile energizers"
-      image : "images/portfolio/walk-stop.jpg"
+      image : "images/portfolio/web-dev/walk-stop.jpg"
       date : "2020"
-      category : "Web Development"
+      category : "Développement Web"
 
 
 ################################## Testimonial #########################33
