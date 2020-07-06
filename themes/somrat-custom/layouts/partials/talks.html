@@ -1,0 +1,51 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<!-- =============================
+      Start Talks
+    =============================== -->
+<section class="services" id="talks">
+    {{ if $data.talks.talk.enable }}
+    {{ with $data.talks.talk }}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto col-sm-10">
+                <div class="wow fadeInUp" data-wow-duration="1.5s">
+                    <div class="services-heading">
+                        <div class="bar"></div>
+                        <h1>{{ .title }}</h1>
+                    </div>
+                    <div class="row">
+                        {{ range .talk_list }}
+                        <div class="col-lg-4 col-sm-4 col-12 services-icon">
+                            {{ if .link }}
+                            <a href="{{ .link }}" target="__blank">
+                            {{ end }}
+                                <div class="service-img">
+                                    <i class="{{ .icon }}"></i>
+                                </div>
+                                <div class="service-label">
+                                    {{ .name | markdownify }}
+                                    {{ if .link_icon }}
+                                    <i class="{{ .link_icon }}"></i>
+                                    {{ end }}
+                                </div>
+                                <div class="service-year">{{ .year | markdownify }}</div>
+                            {{ if .link }}
+                            </a>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+    {{ end }}
+
+
+    {{ partial "call_to_action.html" . }}
+</section>
+<!-- =============================
+       End Talks
+    =============================== -->

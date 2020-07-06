@@ -1,0 +1,42 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<!-- =============================
+       Start About Me
+    =============================== -->
+<section class="about-me" id="about-me">
+    <div class="container">
+        {{ if $data.homepage.about.enable }}
+        {{ with $data.homepage.about }}
+        <div class="row about-me-holder">
+            <div class="col-lg-6 col-md-6 col-sm-6 about-me-text d-flex align-self-center">
+                <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
+                    <h1>{{ .title | safeHTML }}</h1>
+                    <p>{{ .content | emojify }}</p>
+                    {{ if .button.enable }}
+                    {{ with .button }}
+                    <a href="{{ .link | absURL }}" target="__blank" class="download-cv hvr-icon-hang">
+                        {{ .label }}
+                        &nbsp; &nbsp; &nbsp;
+                    </a>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            {{ with .image }}
+            <div class="col-lg-6 col-sm-6 col-9 about-me-images wow fadeInUp" data-wow-duration="1.5s">
+                <img class="img-fluid" src="{{ . | absURL }}" alt="about-me">
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+
+        <div class="row experience-skill">
+            {{ partial "experience.html" . }}
+            {{ partial "skills.html" . }}
+        </div>
+    </div>
+</section>
+<!-- =============================
+      End About Me
+    =============================== -->

@@ -1,0 +1,21 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.experiences.experience.enable }}
+{{ with $data.experiences.experience }}
+<div class="col-lg-6 col-sm-6 col-11 experience wow fadeInUp" id="experience" data-wow-duration="1.5s">
+    <h3>{{ .title }}</h3>
+    <ul class="experience-chart">
+        {{ range .experience_list }}
+        <li>
+            <div class="single-experience">
+                <h4>{{ .name | markdownify }}</h4>
+                {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+            </div>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
+{{ end }}

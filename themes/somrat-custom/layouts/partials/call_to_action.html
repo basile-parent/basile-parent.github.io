@@ -1,0 +1,16 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.call_to_action.enable }}
+{{ with $data.homepage.call_to_action }}
+<div class="need-service wow fadeInUp" data-wow-duration="1.5s"
+     style="background-image: url('{{ .bg_image | absURL }}');">
+    <h1>{{ .title | markdownify }}</h1>
+    {{ with .content }} <p class="text-white">{{ . | markdownify }}</p> {{ end }}
+    {{ if .button.enable }}
+    {{ with .button }}
+    <a href="{{ .link }}" target="{{ .target }}">{{ .label }}</a>
+    {{ end }}
+    {{ end }}
+</div>
+{{ end }}
+{{ end }}

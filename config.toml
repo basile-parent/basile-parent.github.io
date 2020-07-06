@@ -1,12 +1,12 @@
 # baseURL = "http://example.org/"
 languageCode = "fr-FR"
 title = "Basile Parent - Web developer / Scrum Master"
-theme = "somrat"
+theme = "somrat-custom"
 DefaultContentLanguage = "fr"
 
 #################### default parameters ################################
 [params]
-#logo_light = "images/logo.png"
+logo_light = "images/logo.png?ezvze"
 #logo_dark = "images/logo-dark.png"
 # Meta data
 description = "Scrum master / Développeur full stack senior"
