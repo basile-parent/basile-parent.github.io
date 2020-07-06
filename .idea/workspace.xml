@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="115f295a-4b50-42cd-bb1a-d023fbe9133d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1eC5G7gYeYmi1qz9aZxsFp0A0GW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/themes/somrat/static/plugins/fontawesome" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Boulot\IdeaProjects\basile-parent.github.io\themes\somrat\static\plugins\fontawesome" />
+      <recent name="D:\Boulot\IdeaProjects\basile-parent.github.io\themes\somrat\static\plugins\fontawesome\css" />
+      <recent name="D:\Boulot\IdeaProjects\basile-parent.github.io\static\images" />
+      <recent name="D:\Boulot\IdeaProjects\basile-parent.github.io\static\images\backgrounds" />
+      <recent name="D:\Boulot\IdeaProjects\basile-parent.github.io\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Boulot\IdeaProjects\basile-parent.github.io\themes\somrat\static\plugins\fontawesome" />
+      <recent name="D:\Boulot\IdeaProjects\basile-parent.github.io\static\images" />
+      <recent name="D:\Boulot\IdeaProjects\basile-parent.github.io\static" />
+      <recent name="D:\Boulot\IdeaProjects\basile-parent.github.io\images\slider" />
+      <recent name="D:\Boulot\IdeaProjects\basile-parent.github.io\data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="115f295a-4b50-42cd-bb1a-d023fbe9133d" name="Default Changelist" comment="" />
+      <created>1593812635258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593812635258</updated>
+      <workItem from="1593812641278" duration="9594000" />
+      <workItem from="1593822259237" duration="7542000" />
+      <workItem from="1593985738335" duration="9036000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1420" y="165" key="SettingsEditor" timestamp="1593818151912">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1420" y="165" key="SettingsEditor/0.0.2560.1040/2560.47.1280.984@0.0.2560.1040" timestamp="1593818151912" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1593818877299">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.2560.1040/2560.47.1280.984@0.0.2560.1040" timestamp="1593818877299" />
+    <state x="1371" y="100" width="1096" height="840" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593991558221">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1371" y="100" width="1096" height="840" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1040/2560.47.1280.984@0.0.2560.1040" timestamp="1593991558221" />
+    <state x="1626" y="253" width="752" height="635" key="find.popup" timestamp="1593994814316">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1626" y="253" width="752" height="635" key="find.popup/0.0.2560.1040/2560.47.1280.984@0.0.2560.1040" timestamp="1593994814316" />
+    <state x="1560" y="250" width="700" height="530" key="recent.locations.popup" timestamp="1593820261018">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1560" y="250" width="700" height="530" key="recent.locations.popup/0.0.2560.1040/2560.47.1280.984@0.0.2560.1040" timestamp="1593820261018" />
+    <state x="1575" y="242" key="run.anything.popup" timestamp="1593987899098">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1575" y="242" key="run.anything.popup/0.0.2560.1040/2560.47.1280.984@0.0.2560.1040" timestamp="1593987899098" />
+    <state x="1582" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1593995218025">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1582" y="229" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.47.1280.984@0.0.2560.1040" timestamp="1593995218025" />
+  </component>
+</project>
