@@ -8,9 +8,9 @@
         {{ range .experience_list }}
         <li>
             <div class="single-experience">
-                <h4>{{ .name | markdownify }}</h4>
+                <h4>{{ .job_title | markdownify }}</h4>
                 {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
-                {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .dates }} <span>{{ . | markdownify }}</span> {{ end }}
                 {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
             </div>
         </li>

@@ -3,8 +3,413 @@ experience:
   enable : true
   title : "Expériences"
   experience_list:
-    - name : "Développeur Ful Stack"
+    - job_title : "Développeur Full Stack"
       company : "Toto"
-      duration : "2016-2020"
+      dates : "2016-2020"
       content : "Test."
 
+
+
+
+
+
+#  - layout: top-middle
+#    company: Atecna
+#    link: https://www.atecna.fr/
+#    job_title: Scrum Master
+#    dates: Mars 2020 - Maintenant
+#    # quote: >
+#    #  Short description of the company (optional)
+#    description: |
+#      <i class="fas fa-angle-double-right"></i> Scrum Master
+#      <i class="fas fa-angle-double-right"></i> Formateur Agile
+#      <i class="fas fa-angle-double-right"></i> Speaker
+#      <i class="fas fa-angle-double-right"></i> Membre de la communauté agile
+#    missions:
+#      - customer: Decathlon
+#        title: Scrum Master
+#        duration: Depuis Mars 2020
+#        start_date:
+#          month: Mar
+#          year: 2020
+#        description: |
+#          - Scrum Master sur une équipe de 8 personnes
+#          - Synchronisation entre 3 équipes Scrum
+#          - Coaching agile
+#          - Expertise technique Javascript
+#          - Mise en place d'un système de documentation simplifié avec déploiement automatique
+#        skills:
+#          - name: Agile
+#            icon: far fa-sticky-note
+#          - name: Javascript
+#            icon: fab fa-js-square
+#          - name: J2EE
+#            icon: fab fa-java
+#
+#  - layout: top-middle
+#    company: Proxiad
+#    # link: Link to company (optional)
+#    job_title: Développeur Full Stack / Scrum Master
+#    dates: Juillet 2014 - Mars 2020
+#    # quote: >
+#    #  Short description of the company (optional)
+#    description: |
+#      <i class="fas fa-angle-double-right"></i> Développeur Full Stack (Java, JS, React)
+#      <i class="fas fa-angle-double-right"></i> Scrum Master
+#      <i class="fas fa-angle-double-right"></i> Formateur React
+#      <i class="fas fa-angle-double-right"></i> Speaker sur divers thèmes techniques ou autour de l'Agilité
+#      <i class="fas fa-angle-double-right"></i> Membre de la communauté technique
+#      <i class="fas fa-angle-double-right"></i> Organisation d'événements de recrutement
+#    missions:
+#      - customer: Arvato
+#        title: Développeur Full Stack / Scrum Master / Tech Lead Front
+#        duration: 1 an+
+#        start_date:
+#          month: Oct
+#          year: 2018
+#        description: |
+#          - Réalisation d'évolutions sur l'outil de dématérialisation et sur la chaîne de traitement des données.
+#          - Mise en place d'une authentification unique pour toutes les applications de la plateforme.
+#          - Coaching agile
+#          - Mise en place des rituels
+#          - Aide à la rédaction d'un backlog
+#          - Organisation en feature factory
+#          - Participation aux ateliers de conception (techniques et fonctionnels) des futurs projets.
+#          - Animation d'ateliers : priorisation, story mapping, etc.
+#          - Prise en charge des validations des développements.
+#        skills:
+#          - name: J2EE
+#            icon: fab fa-java
+#          - name: Spring
+#            icon: fab fa-java
+#          - name: Python
+#            icon: fab fa-python
+#          - name: Vue.js
+#            icon: fab fa-vuejs
+#          - name: Agile
+#            icon: far fa-sticky-note
+#          - name: Test unitaires
+#            icon: fab fa-searchengin
+#          - name: Linux
+#            icon: fab fa-linux
+#          - name: Postgresql
+#            icon: fas fa-database
+#          - name: Jira
+#            icon: fab fa-jira
+#      - customer: Orange
+#        title: Développeur Full Stack
+#        duration: 2 mois
+#        start_date:
+#          month: Juin
+#          year: 2018
+#        description: |
+#          - Renfort sur le support du programme Guide Vocal (plateforme de création de répondeurs personnalisés).
+#          - Animation d'atelier de découverte (Spring, Lombok, TU)
+#          - Ateliers de conception d'améliorations / refontes techinques
+#        skills:
+#          - name: J2EE
+#            icon: fab fa-java
+#          - name: Agile
+#            icon: far fa-sticky-note
+#          - name: Postgresql
+#            icon: fas fa-database
+#      - customer: Decathlon / BTwin
+#        title: Développeur Full Stack / Scrum Master
+#        duration: 3 ans
+#        start_date:
+#          month: Juin
+#          year: 2015
+#        description: |
+#          Refonte importante d'une application existante de gestion du pilotage rayon des vendeurs en magasin.
+#          - Compréhension du besoin métier et construction du product backlog en collaboration avec le PO
+#          - Organisation d'ateliers d'analyse avec le PO
+#          - Mise en place du cadre Scrum
+#          - Animation des rituels
+#          - Organisation, estimation et priorisation du backlog pour découpage en Sprint
+#          - Gestion et animation de l'environnement JIRA dédié au projet (construction de Dashboard, de filtres, organisation des JIRAs, organisation de la saisie des temps de l'équipe)
+#          - Développements front (React / Javascript) et back (Java / Spring Boot)
+#        skills:
+#          - name: J2EE
+#            icon: fab fa-java
+#          - name: Spring
+#            icon: fab fa-java
+#          - name: React
+#            icon: fab fa-react
+#          - name: Spring Boot
+#            icon: fab fa-java
+#          - name: Agile
+#            icon: far fa-sticky-note
+#          - name: jQuery
+#            icon: fab fa-js-square
+#          - name: Jira
+#            icon: fab fa-jira
+#          - name: Jenkins
+#            icon: fab fa-jenkins
+#          - name: Postgresql
+#            icon: fas fa-database
+#          - name: Oracle
+#            icon: fas fa-database
+#      - customer: Auchan
+#        title: Développeur
+#        duration: 5 mois
+#        start_date:
+#          month: Jan
+#          year: 2015
+#        description: |
+#          Migration d'une application de WebSphere vers Tomcat 7 :
+#          - Gestion de la migration vers Spring, des erreurs de compatibilité
+#          - Migration des appels MQSeries vers des WS REST
+#          - Mise en forme multi-navigateurs
+#
+#          \+ projets internes au CDS Proxiad
+#        skills:
+#          - name: J2EE
+#            icon: fab fa-java
+#          - name: Spring
+#            icon: fab fa-java
+#          - name: Struts
+#            icon: fab fa-java
+#          - name: Hibernate
+#            icon: fab fa-java
+#      - customer: Auchan BI
+#        title: Développeur
+#        duration: 5 mois
+#        start_date:
+#          month: Juil
+#          year: 2014
+#        description: |
+#          Maintenance d'une application de simulation de coûts destinée au service Achat d'Auchan.
+#          - Montée en compétence et documentation de l'application (connaissances perdues)
+#          - Conception de solutions aux problèmes liés au changement de nomenclature
+#          - Mise en place de solutions techniques : tables de transcodage, groupes de négociation
+#          - Réalisation et mise en place de PAF (Plan d'Affaires = export Excel)
+#        skills:
+#          - name: Java
+#            icon: fab fa-java
+#          - name: Oracle
+#            icon: fas fa-database
+#          - name: Teradata
+#            icon: fas fa-database
+#          - name: Shell
+#            icon: fas fa-terminal
+#
+#
+#
+#
+#  - layout: top-middle
+#    company: Osiatis
+#    # link: Link to company (optional)
+#    job_title: Analyste - Développeur
+#    dates: Septembre 2012 - Juillet 2014
+#    #  Short description of the company (optional)
+#    # quote: >
+#    # description:
+#    missions:
+#      - customer: Adeo
+#        title: Intégrateur
+#        duration: 2 mois
+#        start_date:
+#          month: Mars
+#          year: 2014
+#        description: |
+#          Renfort de l'équipe d'intégration des applications d'encaissement.
+#          - Intégration des solutions d'encaissement / fidélité dans les magasins
+#          - Réalisation de solutions de contournement (Shell)
+#          - Transcription de batchs Java en Shell
+#          - Migration de version des applicatifs
+#        skills:
+#          - name: Shell
+#            icon: fas fa-terminal
+#          - name: Linux
+#            icon: fab fa-linux
+#          - name: J2EE
+#            icon: fab fa-java
+#      - customer: Auchan
+#        title: Analyste / Développeur
+#        duration: 1 an+
+#        start_date:
+#          month: Jan
+#          year: 2013
+#        description: |
+#          Mise en place du changement de nomenclature sur toutes les applications d'un domaine (Approlog)
+#          - Grosse analyse de l'existent, recueil d'informations, parcours de documents
+#          - Création d'un logiciel de parsing et génération de requêtes SQL pour les futurs changements de nomenclature
+#        skills:
+#          - name: PL/SQL
+#            icon: fas fa-database
+#          - name: PHP
+#            icon: fab fa-php
+#      - customer: Atos
+#        title: Développeur Full Stack / Scrum Master
+#        duration: 3 mois
+#        start_date:
+#          month: Sept
+#          year: 2012
+#        description: |
+#          Renfort de l'équipe e-commerce (Auchan Drive / Chronodrive) sur la partie migration de données :
+#          - Automatisation de la migration des données vers la nouvelle plateforme (triggers + PL/SQL + ETL)
+#        skills:
+#          - name: SQL
+#            icon: fas fa-database
+#          - name: PL/SQL
+#            icon: fas fa-database
+#          - name: ETL
+#            icon: fas fa-download
+#
+#
+#
+#
+#
+#  - layout: top-middle
+#    company: Cap Gemini
+#    # link: Link to company (optional)
+#    job_title: Développeur Java
+#    dates: Septembre 2009 - Septembre 2012
+#    #  Short description of the company (optional)
+#    # quote: >
+#    # description:
+#    missions:
+#      - customer: Lyonnaise des Eaux
+#        title: Développeur Java
+#        duration: 6 mois
+#        start_date:
+#          month: Fév
+#          year: 2012
+#        description: |
+#          Traitements spécifiques Java autour du contentieux et du recouvrement (sur l'ERP CC&B ==> Oracle Application)
+#        skills:
+#          - name: Java
+#            icon: fab fa-java
+#          - name: Struts
+#            icon: fab fa-java
+#          - name: Hibernate
+#            icon: fab fa-java
+#          - name: Oracle
+#            icon: fas fa-database
+#      - customer: KITS - Castorama
+#        title: Développeur J2EE
+#        duration: 1 an+
+#        start_date:
+#          month: Fév
+#          year: 2011
+#        description: |
+#          Réalisation d'un outil de devis pour les parois de douche en magasin afin de faciliter les ventes et éviter les retours fournisseurs.
+#          - Conception BDD et intégration d'un catalogue complexe.
+#          - Développements
+#          - Organisation en sprints
+#          - Edition d'exports PDF
+#
+#          Réalisation d'un CRUD sur les matériaux disponibles pour le pôle innovation.
+#          - Indexation automatique de fiches PDF pour recherches par critères.
+#
+#          Réalisation d'un logiciel de gestion des bons de commande et de factures pour les prestataires de Castorama.
+#          - Conception et développements
+#          - Organisation en sprints
+#          - Animation de séances de priorisation et d'estimations (Poker Planning)
+#          - Edition de reporting XLS avec statistiques
+#        skills:
+#          - name: J2EE
+#            icon: fab fa-java
+#          - name: Spring
+#            icon: fab fa-java
+#          - name: Struts
+#            icon: fab fa-java
+#          - name: Hibernate
+#            icon: fab fa-java
+#          - name: Oracle
+#            icon: fas fa-database
+#          - name: Agile
+#            icon: far fa-sticky-note
+#      - customer: Decathlon
+#        title: Développeur RUN
+#        duration: 8 mois
+#        start_date:
+#          month: Oct
+#          year: 2010
+#        description: |
+#          Gestion des incidents de l'application Prod.com.<br/>
+#          Réalisation d'évolutions.
+#        skills:
+#          - name: J2EE
+#            icon: fab fa-java
+#          - name: Javascript
+#            icon: fab fa-js-square
+#          - name: Oracle
+#            icon: fas fa-database
+#      - customer: Decathlon
+#        title: Développeur J2EE
+#        duration: 1 an+
+#        start_date:
+#          month: Sept
+#          year: 2009
+#        description: |
+#          - Maintenance et évolutions sur l'application de génération de libellés imprimables.
+#          - Gestion des articles non conformes en magasin et des Actions Correctives Qualité (ACQ) associées. Référentiel de procédures à suivre.
+#          - Gestion de la confiance fournisseurs : détermination d'un indice de confiance d'un fournisseur selon la qualité de ses livraisons, calcul de la fréquence de contrôle en conséquent, planning de contrôle des fournisseurs.
+#        skills:
+#          - name: J2EE
+#            icon: fab fa-java
+#          - name: Struts
+#            icon: fab fa-java
+#          - name: Hibernate
+#            icon: fab fa-java
+#          - name: Oracle
+#            icon: fas fa-database
+#      - customer: Port autonome de Dunkerque
+#        title: Développeur
+#        duration: 1 mois
+#        start_date:
+#          month: Sept
+#          year: 2009
+#        description: |
+#          Génération de scripts SQL de migration de données.
+#        skills:
+#          - name: SQL
+#            icon: fas fa-database
+#
+#
+#
+#
+#
+#
+#
+#  - layout: top-middle
+#    company: GFI (alternance)
+#    # link: Link to company (optional)
+#    job_title: Développeur
+#    dates: Avril 2008 - Septembre 2009
+#    #  Short description of the company (optional)
+#    # quote: >
+#    # description:
+#    missions:
+#      - customer: Orange
+#        title: Développeur
+#        duration: 4 mois
+#        start_date:
+#          month: Mai
+#          year: 2009
+#        description: |
+#          Interface web de gestion des interventions des techniciens et de gestion des incidents.
+#        skills:
+#          - name: PHP
+#            icon: fab fa-php
+#          - name: MySQL
+#            icon: fas fa-database
+#      - customer: Intermarché
+#        title: Développeur
+#        duration: 1 an+
+#        start_date:
+#          month: Avr
+#          year: 2008
+#        description: |
+#          Organisation de la logistique des entrepôts, planning d'arrivée des camions, réapprovisionnement
+#        skills:
+#          - name: J2EE
+#            icon: fab fa-java
+#          - name: Struts
+#            icon: fab fa-java
+#          - name: Hibernate
+#            icon: fab fa-java
+#          - name: Oracle
+#            icon: fas fa-database
+#
