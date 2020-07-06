@@ -6,12 +6,35 @@
     <h3>{{ .title }}</h3>
     <ul class="experience-chart">
         {{ range .experience_list }}
+        {{ $id := delimit (shuffle (seq 1 9)) "" }}
         <li>
             <div class="single-experience">
                 <h4>{{ .job_title | markdownify }}</h4>
                 {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
-                {{ with .dates }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .dates }} (<span>{{ . | markdownify }}</span>) {{ end }}
                 {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+
+                <p id="more_info_{{ $id }}">
+                    <a href="#" onClick="deployExperience({{ $id }}); return false;" class="more_info">
+                        {{ $data.experiences.experience.more_info }}
+                    </a>
+                    <a href="#" onClick="collapseExperience({{ $id }}); return false;" class="less_info">
+                        {{ $data.experiences.experience.less_info }}
+                    </a>
+                </p>
+                <section class="details" id="details_{{ $id }}">
+                    <p>
+                        {{ .description | markdownify }}
+                    </p>
+                    <ul class="skills">
+                        {{ range .skills }}
+                        <li>
+                            <i class="{{ .icon }}"></i>
+                            {{ .name }}
+                        </li>
+                        {{ end }}
+                    </ul>
+                </section>
             </div>
         </li>
         {{ end }}
@@ -19,3 +42,18 @@
 </div>
 {{ end }}
 {{ end }}
+
+
+<script>
+    function deployExperience(id) {
+      console.log(id);
+      $(`#details_${id}`).slideDown();
+      $(`#more_info_${id} .more_info`).hide();
+      $(`#more_info_${id} .less_info`).show();
+    }
+    function collapseExperience(id) {
+      $(`#details_${id}`).slideUp();
+      $(`#more_info_${id} .less_info`).hide();
+      $(`#more_info_${id} .more_info`).show();
+    }
+</script>

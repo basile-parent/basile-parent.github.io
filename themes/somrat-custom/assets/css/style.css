@@ -977,18 +977,18 @@ input:checked + label span:last-child {
   margin-top: 40px;
 }
 
-ul.experience-chart li {
+ul.experience-chart > li {
   padding-left: 30px;
   border-left: 2px solid #6f6f6f;
   padding-bottom: 10px;
   position: relative;
 }
 
-ul.experience-chart li:last-child {
+ul.experience-chart > li:last-child {
   padding-bottom: 0;
 }
 
-ul.experience-chart li:after {
+ul.experience-chart > li:after {
   position: absolute;
   top: -1px;
   left: -12px;
@@ -1003,7 +1003,7 @@ ul.experience-chart li:after {
   transition: all 0.7s;
 }
 
-ul.experience-chart li:hover:after {
+ul.experience-chart > li:hover:after {
   background: #4d4d4d;
 }
 
@@ -1015,12 +1015,12 @@ ul.experience-chart h4 {
   color: #4d4d4d;
 }
 
-.experience-chart li span {
+.experience-chart > li span {
   font-weight: 700;
   color: #6f6f6f;
 }
 
-.experience-chart li p {
+.experience-chart > li p {
   color: #6f6f6f;
 }
 
@@ -1029,6 +1029,26 @@ ul.experience-chart h4 {
   top: -2px;
 }
 
+.single-experience a {
+  color: grey;
+  font-style: italic;
+}
+
+.single-experience ul.skills li {
+  display: inline-block;
+  list-style-type: none;
+  margin : 0 5px 0 0;
+  padding : 0 8px;
+  background-color: #4d4d4d;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+}
+
+.single-experience .details,
+.single-experience .less_info {
+  display: none;
+}
 /* ========= Start Skill ======= */
 
 .skill-progress-bar {
