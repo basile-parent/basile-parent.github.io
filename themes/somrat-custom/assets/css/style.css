@@ -1378,10 +1378,12 @@ ul.experience-chart h4 {
 }
 
 .item-caption h2 {
-  font-size: 32px;
+  font-size: 22px;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   padding-left: 13px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .item-caption p {
@@ -1402,6 +1404,10 @@ ul.experience-chart h4 {
 .filtr-item:hover .item-caption {
   -webkit-transform: translateX(0px);
   transform: translateX(0px);
+}
+
+.filtr-item:hover .item-caption h2 {
+  overflow: visible;
 }
 
 .item-holder a {
