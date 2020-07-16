@@ -43,3 +43,7 @@ portfolio:
       image : "images/portfolio/web-dev/walk-stop.jpg"
       date : "2020"
       category : "Développement Web"
+    - name : "Space shooter JS"
+      image : "images/portfolio/web-dev/tryhardship.jpg"
+      date : "2020"
+      category : "Développement Web"
