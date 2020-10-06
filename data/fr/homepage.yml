@@ -4,8 +4,9 @@ hero:
 
   # animated text loop
   occupations:
-    - "Web Developer"
     - "Scrum Master"
+    - "Web Developer"
+    - "Formateur"
     - "Danseur"
 
   # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
