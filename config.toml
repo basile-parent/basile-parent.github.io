@@ -9,8 +9,8 @@ DefaultContentLanguage = "fr"
 logo_light = "images/logo.png?ezvze"
 #logo_dark = "images/logo-dark.png"
 # Meta data
-description = "Scrum master / Développeur full stack senior"
-author = "bparent"
+description = "Scrum master / Développeur full stack senior / Formateur"
+author = "Basile Parent"
 # contact form action
 contact_form_action = "" # contact form works with https://formspree.io
 # Google Analitycs

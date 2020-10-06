@@ -41,7 +41,7 @@
           <div class="header-social-holder">
             <ul class="header-social-icons">
               {{ range .socials }}
-              <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+              <li><a href="{{ .link | safeURL }}" target="_blank"><i class="{{ .icon }}"></i></a></li>
               {{ end }}
             </ul>
           </div>
