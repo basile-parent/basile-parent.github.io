@@ -1,25 +1,40 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if $data.skills.skill.enable }}
-{{ with $data.skills.skill }}
+{{ if $data.skills.sections }}
 <div class="col-lg-6 col-sm-6 col-11 skill wow fadeInUp" id="skills" data-wow-duration="1.5s">
-    <h3>{{ .title }}</h3>
-    {{ range .categories }}
-    <div class="skill-category">
-        <h4>{{ .title }}</h4>
-        <div class="skill-progress-bar">
-            {{ range .skill_list }}
-            <div class="clearfix">
-                <span class="skillbar-title">{{ .name }}</span>
-                <span class="skill-bar-percent">{{ if $data.homepage.showPercentage }}{{ .parcentage }}{{ end }}</span>
-                <div class="skillbar" data-percent="{{ .parcentage }}">
-                    <div class="skillbar-bar"></div>
+    {{ range $data.skills.sections }}
+    <div class="skill-section">
+        <h3>{{ .title }}</h3>
+
+        {{ if .badges }}
+        <div class="skill-badges">
+            {{ range .badges }}
+            {{ if .link }}<a href="{{ .link | absURL }}" target="_blank">{{ end }}
+            <img src="{{ .image | absURL }}" alt="{{ .name | safeHTML }}" title="{{ .name | safeHTML }}" />
+            {{ if .link }}</a>{{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+
+        {{ range .categories }}
+        <div class="skill-category">
+            <h4>{{ .title }}</h4>
+            {{ if .skill_list }}
+            <div class="skill-progress-bar">
+                {{ range .skill_list }}
+                <div class="clearfix">
+                    <span class="skillbar-title">{{ .name }}</span>
+                    <span class="skill-bar-percent">{{ if $data.homepage.showPercentage }}{{ .parcentage }}{{ end }}</span>
+                    <div class="skillbar" data-percent="{{ .parcentage }}">
+                        <div class="skillbar-bar"></div>
+                    </div>
                 </div>
+                {{ end }}
             </div>
             {{ end }}
         </div>
-    </div>
+        {{ end }}
+        </div>
     {{ end }}
 </div>
-{{ end }}
 {{ end }}

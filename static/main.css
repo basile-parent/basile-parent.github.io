@@ -23,6 +23,35 @@
     color: white;
 }
 
+.skill-section {
+    margin-bottom: 15px;
+}
+.skill-badges a:hover {
+    text-decoration: none !important;
+}
+.skill-badges img {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+.skill-badges img:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
 .skill-category h4 {
     margin-top: 20px;
 }

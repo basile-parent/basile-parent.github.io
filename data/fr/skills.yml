@@ -1,38 +1,45 @@
 ############################### Skill #################################
-skill:
-  enable : true
-  showPercentage : false
-  title : "Compétences"
-  categories:
-    - title: Technique
-      skill_list:
-        - name : "J2EE"
-          parcentage : "90%"
-        - name : "Javascript"
-          parcentage : "90%"
-        - name : "React"
-          parcentage : "75%"
-        - name : "VueJS"
-          parcentage : "40%"
-        - name : "Docker"
-          parcentage : "35%"
-        - name : "CD/CI"
-          parcentage : "45%"
-    - title: Agile
-      skill_list:
-        - name : "Scrum"
-          parcentage : "100%"
-        - name : "Kanban"
-          parcentage : "60%"
-        - name : "Animation d'ateliers / formations"
-          parcentage : "85%"
-    - title: Savoir-être
-      skill_list:
-        - name : "Formation"
-          parcentage : "100%"
-        - name : "Coaching"
-          parcentage : "100%"
-        - name : "Relationnel"
-          parcentage : "100%"
-        - name : "Partage de connaissances"
-          parcentage : "100%"
+sections:
+  - title: Certifications
+    badges:
+      - name: "PSM1"
+        image: "images/certifs/psm1.png"
+        link: "https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments"
+      - name: "Agnostic agile"
+        image: "images/certifs/agnostic-agile.png"
+        link: "https://agnosticagile.org/fr/"
+  - showPercentage : false
+    title : "Compétences"
+    categories:
+      - title: Technique
+        skill_list:
+          - name : "J2EE"
+            parcentage : "90%"
+          - name : "Javascript"
+            parcentage : "90%"
+          - name : "React"
+            parcentage : "75%"
+          - name : "VueJS"
+            parcentage : "40%"
+          - name : "Docker"
+            parcentage : "35%"
+          - name : "CD/CI"
+            parcentage : "45%"
+      - title: Agile
+        skill_list:
+          - name : "Scrum"
+            parcentage : "100%"
+          - name : "Kanban"
+            parcentage : "60%"
+          - name : "Animation d'ateliers / formations"
+            parcentage : "85%"
+      - title: Savoir-être
+        skill_list:
+          - name : "Formation"
+            parcentage : "100%"
+          - name : "Coaching"
+            parcentage : "100%"
+          - name : "Relationnel"
+            parcentage : "100%"
+          - name : "Partage de connaissances"
+            parcentage : "100%"
