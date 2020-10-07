@@ -1372,6 +1372,7 @@ ul.experience-chart h4 {
 
 .filtr-item {
   height: 250px;
+  padding: 10px;
 }
 
 .filtr-item img {
@@ -1380,6 +1381,9 @@ ul.experience-chart h4 {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+
+  height: 100%;
+  object-fit: contain;
 }
 
 .filtr-item:hover .item-holder img {
@@ -1404,15 +1408,16 @@ ul.experience-chart h4 {
 
 .item-caption {
   position: absolute;
-  top: 0px;
+  top: 0;
   bottom: 0;
   left: 0;
-  width: 150px;
+  width: 250px;
   background: #313131;
-  -webkit-transform: translateX(-150px);
-  transform: translateX(-150px);
+  -webkit-transform: translateX(-251px);
+  transform: translateX(-251px);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  padding-top: 10px;
 }
 
 .item-caption h2 {
@@ -1451,6 +1456,8 @@ ul.experience-chart h4 {
 .item-holder a {
   text-decoration: none;
   color: #fff;
+  height: 100%;
+  display: inline-block;
 }
 
 .item-holder a:focus {
