@@ -20,7 +20,7 @@ sections:
           - name : "React"
             parcentage : "75%"
           - name : "VueJS"
-            parcentage : "40%"
+            parcentage : "50%"
           - name : "Docker"
             parcentage : "35%"
           - name : "CD/CI"
@@ -31,6 +31,8 @@ sections:
             parcentage : "100%"
           - name : "Kanban"
             parcentage : "60%"
+          - name : "XP"
+            parcentage : "75%"
           - name : "Animation d'ateliers / formations"
             parcentage : "85%"
       - title: Savoir-être

@@ -6,7 +6,12 @@ talk:
     - name: Estimations
       year: Bientôt
       icon: fas fa-money-bill-alt
-    #      icon: fa fa-twitter
+    - name: Formation certif PSD
+      year: Bientôt
+      icon: fa fa-code
+    - name: Formation Agilité
+      year: 2020
+      icon: fa fa-undo
     - name: Daily Meeting
       year: 2019
       icon: fa fa-users
@@ -18,7 +23,7 @@ talk:
     - name: Formation React
       year: 2018
       icon: fab fa-react
-    - name: Formation Spring
+    - name: Dojo Spring
       year: 2018
       icon: fab fa-java
     - name: WebSockets
