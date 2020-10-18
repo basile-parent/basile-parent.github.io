@@ -177,8 +177,8 @@ body {
 .logo {
   position: absolute;
   z-index: 10;
-  top: 2px;
-  left: 40px;
+  top: 30px;
+  right: 40px;
 }
 
 .no-js .logo {
@@ -285,6 +285,7 @@ body {
   font-family: 'Rubik', sans-serif !important;
   font-weight: 300;
   z-index: 10;
+  width: auto;
 }
 
 .head-holder {
