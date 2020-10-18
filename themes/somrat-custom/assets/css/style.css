@@ -1189,7 +1189,7 @@ ul.experience-chart h4 {
 
 .services-icon a:hover {
   width: 100%;
-  color: gray;
+  color: red;
 }
 
 .service-img {
@@ -1961,7 +1961,9 @@ textarea.form-control::-webkit-input-placeholder,
 
 @media (max-width: 767px) {
   .logo {
-    left: 10px;
+    right: 10px;
+    top: 10px;
+    width: 80px;
   }
   .header .logo img {
     width: 185px;

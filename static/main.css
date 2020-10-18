@@ -24,7 +24,7 @@
 }
 
 .skill-section {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
 .skill-badges a:hover {
     text-decoration: none !important;
@@ -62,6 +62,10 @@
 
 .skill-progress-bar {
     margin-top : 0;
+}
+
+.skill-list h4 {
+    font-size: 20px;
 }
 
 .skillbar {

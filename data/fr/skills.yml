@@ -1,5 +1,11 @@
 ############################### Skill #################################
 sections:
+  - title: Diplômes
+    items:
+      - title: "Master MIAGE"
+        icon: "fas fa-user-graduate"
+      - title: "DUT Informatique"
+        icon: "fas fa-user-graduate"
   - title: Certifications
     badges:
       - name: "PSM1"

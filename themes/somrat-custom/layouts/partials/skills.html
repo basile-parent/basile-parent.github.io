@@ -16,6 +16,14 @@
         </div>
         {{ end }}
 
+        {{ if .items }}
+        <div class="skill-list">
+            {{ range .items }}
+            <h4><i class="{{ .icon }}"></i> {{ .title }}</h4>
+            {{ end }}
+        </div>
+        {{ end }}
+
         {{ range .categories }}
         <div class="skill-category">
             <h4>{{ .title }}</h4>
