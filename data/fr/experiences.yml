@@ -144,7 +144,7 @@ experience:
         icon: fab fa-java
   - company: Auchan BI
     job_title: Développeur Java
-    dates: 2014-2015
+    dates: 2014
     duration: 5 mois
     start_date:
       month: Juil
@@ -192,7 +192,7 @@ experience:
       month: Jan
       year: 2013
     description: |
-      Mise en place du changement de nomenclature sur toutes les applications d'un domaine (Approlog)
+      Prise en charge d’un changement de nomenclature majeur pour l’entreprise sur plusieurs applications du service Approlog (Approvisionnement & Logistique).
       - Grosse analyse de l'existent, recueil d'informations, parcours de documents
       - Création d'un logiciel de parsing et génération de requêtes SQL pour les futurs changements de nomenclature
     skills:
@@ -244,8 +244,8 @@ experience:
       year: 2011
     description: |
       Réalisation d'un outil de devis pour les parois de douche en magasin afin de faciliter les ventes et éviter les retours fournisseurs.
-      - Conception BDD et intégration d'un catalogue complexe.
-      - Développements
+      - Architecture application et BDD, intégration d’un catalogue complexe.
+      - Développements back (J2EE) et front (JSP / HTML / CSS / JS)
       - Organisation en sprints
       - Edition d'exports PDF
 
@@ -295,7 +295,7 @@ experience:
       month: Sept
       year: 2009
     description: |
-      - Maintenance et évolutions sur l'application de génération de libellés imprimables.
+      - Maintenance et développements sur l’application de génération de libellés imprimables pour affichage magasin (description produit, affiches prix de différentes tailles).
       - Gestion des articles non conformes en magasin et des Actions Correctives Qualité (ACQ) associées. Référentiel de procédures à suivre.
       - Gestion de la confiance fournisseurs : détermination d'un indice de confiance d'un fournisseur selon la qualité de ses livraisons, calcul de la fréquence de contrôle en conséquent, planning de contrôle des fournisseurs.
     skills:
