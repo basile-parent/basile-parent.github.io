@@ -6,10 +6,31 @@ experience:
   less_info: "Moins de détails"
   expand_info: "Dérouler / enrouler tous les détails"
   experience_list:
+  - company: Leroy Merlin
+    job_title: Scrum Master
+    dates: 2020-2021
+    duration: Depuis décembre 2020
+    start_date:
+      month: Dec
+      year: 2020
+    description: |
+      - Scrum Master de 2 équipes d'une dizaine de personnes
+      - Coaching agile
+      - Mise en place de tests de non régression automatisés
+      - Expertise technique Java / Javascript
+    skills:
+      - name: Agile
+        icon: far fa-sticky-note
+      - name: J2EE
+        icon: fab fa-java
+      - name: Angular
+        icon: fab fa-angular
+      - name: Cypress
+        icon: fab fa-js-square
   - company: Decathlon
     job_title: Scrum Master
     dates: 2020
-    duration: Depuis Mars 2020
+    duration: 6 mois
     start_date:
       month: Mar
       year: 2020
