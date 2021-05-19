@@ -12,13 +12,13 @@ hero:
   # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
   socials:
     - icon: fab fa-twitter
-      link: https://twitter.com/basile_parent
+      link: https://twitter.com/basileparent
     - icon: fab fa-github
       link: https://github.com/basile-parent
     - icon: fab fa-linkedin
       link: https://www.linkedin.com/in/basile-parent/
     - icon: fab fa-youtube
-      link: https://www.youtube.com/channel%2FUCc3QNmcoP0B_qwAn9Y9YyTA
+      link: https://www.youtube.com/channel/UCc3QNmcoP0B_qwAn9Y9YyTA
 
   # slider background image loop
   slider_image:
