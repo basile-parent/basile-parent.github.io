@@ -22,7 +22,7 @@ sections:
           - name : "J2EE"
             parcentage : "90%"
           - name : "Javascript"
-            parcentage : "90%"
+            parcentage : "100%"
           - name : "React"
             parcentage : "75%"
           - name : "VueJS"
