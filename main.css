@@ -71,3 +71,8 @@
 .skillbar {
     margin-bottom: 10px;
 }
+
+.skill-icon {
+    width: 20px;
+    text-align: center;
+}
