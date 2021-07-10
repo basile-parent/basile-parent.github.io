@@ -1185,6 +1185,11 @@ ul.experience-chart h4 {
 .services-icon a {
   width: 100%;
   color: inherit;
+
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 }
 
 .services-icon a:hover {

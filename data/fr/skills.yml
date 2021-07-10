@@ -2,6 +2,8 @@
 sections:
   - title: Diplômes
     items:
+      - title: "CAP Cuisine"
+        icon: "fas fa-thermometer-half"
       - title: "Master MIAGE"
         icon: "fas fa-user-graduate"
       - title: "DUT Informatique"
@@ -35,7 +37,7 @@ sections:
             parcentage : "35%"
           - name : "CD/CI"
             parcentage : "45%"
-      - title: Agile
+      - title: Agilité
         skill_list:
           - name : "Scrum"
             parcentage : "100%"
@@ -45,6 +47,8 @@ sections:
             parcentage : "75%"
           - name : "Animation d'ateliers / formations"
             parcentage : "85%"
+          - name : "Agnostic agile"
+            parcentage : "100%"
       - title: Savoir-être
         skill_list:
           - name : "Formation"
