@@ -12,10 +12,13 @@ sections:
     badges:
       - name: "PSM1"
         image: "images/certifs/psm1.png"
-        link: "https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments"
+        link: "https://www.credly.com/badges/91887340-ec8e-4938-aa94-14a091e8c7d9/public_url"
       - name: "Agnostic agile"
         image: "images/certifs/agnostic-agile.png"
         link: "https://agnosticagile.org/fr/"
+      - name: "Opquast"
+        image: "images/certifs/opquast.png"
+        link: "https://directory.opquast.com/fr/certificat/JF5GBD/"
   - showPercentage : false
     title : "Compétences"
     categories:
