@@ -1,0 +1,15 @@
+@media (orientation: portrait) and (max-width: 500px) {
+    #skills-page .front {
+        overflow: hidden;
+    }
+
+    #skills-page .page-content {
+        display: inline-block;
+        overflow: auto;
+    }
+
+    #skills-page #skills-details,  #skills-page #experiences-section {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,243 @@
+
+/* ************* HEADER ************* */
+#cover-page.animated #cover-container header {
+    animation: reveal-header 1s ease-out forwards;
+    top: -50%;
+}
+
+@keyframes reveal-header { 100% { top: 0; } }
+
+/* ************* GLOBAL CONTAINER ************* */
+#cover-page.animated #cover-container article#cover-dev-section,
+#cover-page.animated #cover-container article#cover-specialist-section,
+#cover-page.animated #cover-container article#cover-teacher-section {
+    animation: reveal-container .5s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+#cover-page.animated #cover-container article#cover-dev-section,
+#cover-page.animated #cover-container article#cover-specialist-section {
+    left: 150%;
+}
+
+#cover-page.animated #cover-container article#cover-teacher-section {
+    left: -150%;
+}
+
+@keyframes reveal-container { 100% { left: 5%; } }
+
+
+/* ************************************** */
+/* ************* BACKGROUND ************* */
+/* ************************************** */
+
+/* ************* LIGHTNING ************** */
+#cover-page.animated #cover-container article .background-lightning {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/animations/lightning_1.webp") no-repeat top center;
+    background-size: 400px 630px;
+    opacity: 0;
+    animation: lightning-strike-main 2.5s ease-out forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes lightning-strike-main {
+    10% { opacity: 0; }
+    15% { opacity: 1; }
+    25% { opacity: 1; }
+    40% { opacity: 0; }
+}
+
+
+#cover-page.animated #cover-container article .background-lightning:before,
+#cover-page.animated #cover-container article .background-lightning:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 400px 630px;
+    opacity: 0;
+}
+#cover-page.animated #cover-container article .background-lightning:before {
+    background: url("../assets/animations/lightning_2.webp") no-repeat;
+    background-size: 400px 630px;
+    animation: lightning-strike-sub-1 2.5s ease-out forwards;
+    animation-delay: 2.5s;
+}
+
+#cover-page.animated #cover-container article .background-lightning:after {
+    background: url("../assets/animations/lightning_3.webp") no-repeat;
+    background-size: 400px 630px;
+    animation: lightning-strike-sub-2 2.5s ease-out forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes lightning-strike-sub-1 {
+    15% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 0; }
+}
+
+@keyframes lightning-strike-sub-2 {
+    20% { opacity: 0; }
+    25% { opacity: 1; }
+    40% { opacity: 0; }
+}
+
+#cover-page.animated #cover-container article#cover-dev-section .background-lightning,
+#cover-page.animated #cover-container article#cover-dev-section .background-lightning:before,
+#cover-page.animated #cover-container article#cover-dev-section .background-lightning:after {
+    background-position: 0 0;
+}
+
+#cover-page.animated #cover-container article#cover-teacher-section .background-lightning {
+    background-position: 0 -240px;
+}
+#cover-page.animated #cover-container article#cover-teacher-section .background-lightning:before,
+#cover-page.animated #cover-container article#cover-teacher-section .background-lightning:after {
+    background-position: 0 -185px;
+}
+
+#cover-page.animated #cover-container article#cover-specialist-section .background-lightning {
+    background-position: 0 -440px;
+}
+#cover-page.animated #cover-container article#cover-specialist-section .background-lightning:before,
+#cover-page.animated #cover-container article#cover-specialist-section .background-lightning:after {
+    background-position: 0 -400px;
+}
+
+/* ************* SUPER DEAF ************* */
+#cover-page.animated #cover-container .super-deaf-blur {
+    position: absolute;
+    top: 10%;
+    left: -40%;
+    width: 30px;
+    height: 200px;
+    transform: rotateZ(115deg);
+    background: url("../assets/characters/super-deaf-blur.webp") no-repeat center center;
+    background-size: cover;
+}
+#cover-page.animated #cover-container article#cover-teacher-section .super-deaf-blur {
+    animation: super-deaf-fly-panel-2 .5s ease-out forwards;
+    animation-delay: 3.5s;
+}
+#cover-page.animated #cover-container article#cover-specialist-section .super-deaf-blur {
+    animation: super-deaf-fly-panel-3 .5s ease-out forwards;
+    animation-delay: 3.6s;
+}
+
+@keyframes super-deaf-fly-panel-2 {
+    0% { top: -20%; left: -40%; }
+    100% { top: 180%; left: 150%; }
+}
+@keyframes super-deaf-fly-panel-3 {
+    0% { top: -30%; left: 60%; }
+    100% { top: 170%; left: 260%; }
+}
+
+#cover-page.animated #cover-container article .section-background {
+    opacity: 0;
+    animation: reveal-background 3.5s ease-in forwards;
+    animation-delay: 4.5s;
+}
+
+#cover-page.animated #cover-container article .section-border .section-content {
+    animation: lightning-background 2.5s ease-out forwards;
+    animation-delay: 2.5s;
+}
+@keyframes reveal-background {
+    100% { opacity: 1 }
+}
+@keyframes lightning-background {
+    0% { background-color: #00002f; }
+    10% { background-color: #00002f; }
+    15% { background-color: #ebebff; }
+    20% { background-color: #6767ff; }
+    25% { background-color: #ebebff; }
+    30% { background-color: #000000; }
+    60% { background-color: #00002f; }
+}
+
+/* ************* CHARACTER & PUNCHLINE ************* */
+#cover-page.animated #cover-container article#cover-dev-section .section-character {
+    right: -60%;
+    animation: reveal-dev-character .5s ease-out forwards;
+}
+#cover-page.animated #cover-container article#cover-dev-section .section-character,
+#cover-page.animated #cover-container article#cover-dev-section .section-punchline {
+    animation-delay: 7.5s;
+}
+#cover-page.animated #cover-container article#cover-teacher-section .section-character,
+#cover-page.animated #cover-container article#cover-teacher-section .section-punchline {
+    animation-delay: 9s;
+}
+#cover-page.animated #cover-container article#cover-specialist .section-character,
+#cover-page.animated #cover-container article#cover-specialist .section-punchline {
+    animation-delay: 11s;
+}
+
+#cover-page.animated #cover-container article#cover-teacher-section .section-character {
+    left: -80%;
+    animation: reveal-teacher-character .5s ease-out forwards;
+}
+
+#cover-page.animated #cover-container article#cover-specialist-section .section-character {
+    right: -50%;
+    animation: reveal-specialist-character .5s ease-out forwards;
+}
+
+@keyframes reveal-dev-character { 100% { right: -10%;} }
+@keyframes reveal-teacher-character { 100% { left: 0;} }
+@keyframes reveal-specialist-character { 100% { right: -10px;} }
+
+
+#cover-page.animated #cover-container article#cover-dev-section .section-punchline,
+#cover-page.animated #cover-container article#cover-specialist-section .section-punchline {
+    left: -75%;
+    animation: reveal-left-punchline .5s ease-out forwards;
+}
+
+#cover-page.animated #cover-container article#cover-teacher-section .section-punchline {
+    right: -75%;
+    animation: reveal-right-punchline .5s ease-out forwards;
+}
+
+@keyframes reveal-left-punchline { 100% { left: 2%;} }
+@keyframes reveal-right-punchline { 100% { right: 5%;} }
+
+#cover-page.animated #cover-container article#cover-dev-section .section-character,
+#cover-page.animated #cover-container article#cover-dev-section .section-punchline {
+    animation-delay: 7s;
+}
+#cover-page.animated #cover-container article#cover-teacher-section .section-character,
+#cover-page.animated #cover-container article#cover-teacher-section .section-punchline {
+    animation-delay: 8s;
+}
+#cover-page.animated #cover-container article#cover-specialist-section .section-character,
+#cover-page.animated #cover-container article#cover-specialist-section .section-punchline {
+    animation-delay: 9s;
+}
+
+/* ************* BUBBLE ************* */
+#cover-page.hinted.animated .bubble {
+    opacity: 0;
+    animation: cover-bubble-reveal .5s ease-out forwards, bubble-pulse 3s linear infinite;
+    animation-delay: 12s;
+}
+
+@keyframes cover-bubble-reveal {
+    100% { opacity: 1; }
+}
+
+@keyframes bubble-pulse {
+    0% { scale: 1; }
+    80% { scale: 1; }
+    90% { scale: 1.2; }
+    100% { scale: 1; }
+}

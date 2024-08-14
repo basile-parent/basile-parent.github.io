@@ -1,0 +1,40 @@
+@media (orientation: portrait) and (max-width: 500px),
+        (orientation: landscape) and (max-height: 700px) {
+    html, body, .scene {
+        width: 100%;
+        height: 100%;
+    }
+
+    .scene {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .page {
+        overflow: auto;
+        background: #F6F6F6;
+        z-index: 0;
+        border: 1px solid #3d3d3d;
+
+        transition: .7s ease-out transform;
+    }
+
+    .page:not(.active) {
+        overflow: hidden;
+    }
+
+    .page.flipped {
+        transform: translateX(-150%);
+    }
+
+    .page.active {
+        transform: none;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 700px) {
+    .page .front.page-with-content footer {
+        height: 50px;
+    }
+}

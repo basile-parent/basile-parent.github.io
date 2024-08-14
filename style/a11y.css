@@ -1,0 +1,138 @@
+#a11y-parameters #a11y-dialog-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+    border-radius: 100%;
+    font-size: 1.2rem;
+
+    background: url("../assets/icons/accessibility.webp") no-repeat 40% 40% white;
+    background-size: 80% 80%;
+
+    transition: all .3s ease;
+}
+
+#a11y-parameters #a11y-dialog-button:hover,
+#a11y-parameters #a11y-dialog-button:focus {
+    scale: 1.2;
+    box-shadow: 0 0 4px white,
+                0 0 8px white,
+                0 0 12px white,
+                0 0 16px white,
+                0 0 20px white;
+}
+
+#a11y-parameters #a11y-dialog-button .bubble {
+    top: -110px;
+    right: -5%;
+    width: 300px;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+#a11y-parameters #a11y-dialog-button:hover .bubble,
+#a11y-parameters #a11y-dialog-button:focus .bubble {
+    opacity: 1;
+}
+
+/* ***************************************
+************      DIALOG      ************
+**************************************** */
+
+#a11y-dialog .dialog {
+    padding: 20px 40px 30px 40px;
+    overflow: auto;
+}
+
+#a11y-dialog h2 {
+    margin: 0;
+}
+
+#a11y-dialog h3 {
+    margin: 0 0 10px 0;
+}
+
+#a11y-dialog fieldset {
+    margin-top: 1rem;
+    padding: 0;
+    border: none;
+}
+
+#a11y-dialog .radio-input-button {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#a11y-dialog .radio-input-button label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+#a11y-dialog .radio-input-button:hover,
+#a11y-dialog .radio-input-button:focus-within {
+    box-shadow: 0 0 15px black;
+}
+
+#a11y-dialog .radio-input-button:focus-within {
+    border: 2px solid white;
+    outline: 2px solid black;
+}
+
+
+#a11y-dialog .radio-input-button input {
+    /*display: none;*/
+}
+
+#a11y-dialog .radio-input-button:has(input:checked) {
+    color: white;
+    background-color: black;
+}
+
+#a11y-dialog .radio-input-button:has(input[disabled]) {
+    border-color: grey;
+    color: grey;
+}
+#a11y-dialog .radio-input-button:has(input[disabled]),
+#a11y-dialog .radio-input-button:has(input[disabled]) * {
+    cursor: not-allowed;
+}
+#a11y-dialog .radio-input-button:has(input[disabled]:checked) {
+    border-color: grey;
+    background-color: grey;
+    color: white;
+}
+
+
+@media (orientation: portrait) and (max-width: 500px),
+    (orientation: landscape) and (max-height: 700px) {
+    #a11y-parameters #a11y-dialog-button {
+        top: 5px;
+        right: 5px;
+        height: 9mm;
+        width: 9mm;
+        opacity: 0.6;
+    }
+
+    #a11y-dialog .dialog {
+        padding: 15px;
+        overflow: auto;
+    }
+
+    #a11y-dialog .radio-input-button {
+        width: 31%;
+        font-size: 0.75rem;
+    }
+}

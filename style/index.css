@@ -1,0 +1,188 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffcf76;
+    color: black;
+
+    font-family: "Comic_book_regular", "Comic Sans", cursive;
+
+    overflow: hidden;
+}
+
+body.dys-font {
+    font-family: "OpenDyslexic", cursive;
+}
+
+body:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: url("../assets/backgrounds/bg.webp") center center no-repeat;
+    background-size: cover;
+}
+
+@media (orientation: portrait) and (max-width: 500px),
+        (orientation: landscape) and (max-height: 700px) {
+    body:before {
+        display: none;
+        background: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul, nav li {
+    list-style-type: none;
+}
+
+a, a:visited {
+    color: #00009a;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #6565e6;
+    text-decoration: underline;
+}
+
+.new-tab-link {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    background-color: currentColor;
+    color: currentColor;
+    vertical-align: middle;
+    -webkit-mask: url("../assets/icons/new-tab-icon.webp");
+    mask: url("../assets/icons/new-tab-icon.webp");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+
+.print-only {
+    display: none;
+}
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+button {
+    font-family: "Comic_book_regular", "Comic Sans", cursive;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.dys-font button {
+    font-family: "OpenDyslexic", cursive;
+}
+
+
+@font-face {
+    font-family: "Comic_book_regular";
+    src: url("fonts/comic_book-webfont.woff2") format("woff2"),
+    url("fonts/comic_book-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Comic_book_bold";
+    src: url("fonts/comic_book_bold-webfont.woff2") format("woff2"),
+    url("fonts/comic_book_bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Badaboom";
+    src: url("fonts/badabb__-webfont.woff2") format("woff2"),
+    url("fonts/badabb__-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("fonts/opendyslexic-webfont.woff2") format("woff2"),
+    url("fonts/opendyslexic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pink_chicken";
+    src: url("fonts/pinkchicken-regular-webfont.woff2") format("woff2"),
+    url("fonts/pinkchicken-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* *************************************** */
+/* *************  SCROLLBAR  ************* */
+/* *************************************** */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    cursor: pointer;
+}
+
+/* *************************************** */
+/* ************  SKIP LINKS  ************* */
+/* *************************************** */
+#skip-links a {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: white;
+    padding: 2px 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+
+    z-index: 50;
+}
+
+#skip-links a:focus {
+    top: 0;
+}
