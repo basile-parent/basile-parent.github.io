@@ -1,7 +1,1 @@
-function showContact() {
-    alert("Contact !")
-}
-
-function invalidateContact() {
-    
-}
+function showContact(){alert("Contact !")};function invalidateContact(){}
