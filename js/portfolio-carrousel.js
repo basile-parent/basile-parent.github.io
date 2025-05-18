@@ -1,6 +1,8 @@
 let currentSlideIndex = 0
 let slideCount
 
+const TRANSITION_DURATION = 300
+
 function initCarrousel() {
     initCarrouselImgAfterLoad()
     $("#carrousel-panel button.next-slide-button").on("click", nextSlide)
@@ -76,8 +78,8 @@ function transitionSlide(direction) {
             $("#carrousel-panel .carrousel-item")
                 .removeClass(fadeOutClass)
                 .removeClass(fadeInClass)
-        }, 300)
-    }, 300)
+        }, TRANSITION_DURATION)
+    }, TRANSITION_DURATION)
 }
 
 function adaptTitle(direction) {
@@ -101,8 +103,8 @@ function adaptTitle(direction) {
                 $("#hobbies-page h2 .title-part")
                     .removeClass(fadeOutClass)
                     .removeClass(fadeInClass)
-            }, 300)
-        }, 300)
+            }, TRANSITION_DURATION)
+        }, TRANSITION_DURATION)
     }
 }
 
