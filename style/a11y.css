@@ -33,6 +33,19 @@
     transition: all .3s ease;
 }
 
+@media (orientation: portrait) and (max-width: 500px),
+(orientation: landscape) and (max-height: 700px) {
+    #a11y-parameters #a11y-dialog-button .bubble {
+        top: unset;
+        bottom: -90px;
+    }
+    /* Remove the arrow */
+    #a11y-parameters #a11y-dialog-button .bubble:before,
+    #a11y-parameters #a11y-dialog-button .bubble:after {
+        display: none;
+    }
+}
+
 #a11y-parameters #a11y-dialog-button:hover .bubble,
 #a11y-parameters #a11y-dialog-button:focus .bubble {
     opacity: 1;
@@ -123,7 +136,6 @@
         right: 5px;
         height: 9mm;
         width: 9mm;
-        opacity: 0.6;
     }
 
     #a11y-dialog .dialog {

@@ -147,6 +147,9 @@
     padding: 0 15px;
     font-size: 1.1rem;
     z-index: 15;
+    max-width: 95%;
+    white-space: break-spaces;
+    word-wrap: break-word;
 }
 
 #talks-page #react-training .training-text {

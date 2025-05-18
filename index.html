@@ -628,8 +628,8 @@
         <!-- *********************   CERTIFICATES PAGE   ********************* -->
         <section id="certificates-page" class="page">
             <div class="front page-with-content">
-                <div class="panel">
-                    <aside class="panel-background" aria-hidden="true"></aside>
+                <div id="certificates-page-panel" class="panel">
+                    <aside id="certificates-page-panel-noise"  class="panel-background" aria-hidden="true"></aside>
 
                     <header>
                         <h2 tabindex="-1"><span class="unskew">Diplômes</span></h2>
@@ -1247,7 +1247,7 @@
                             </a>
                         </p>
                         <p>
-                            Ce CV est <button id="print-button" onClick="window.print()">imprimable</button> mais ne le faites que si c'est nécessaire.
+                            Ce CV est <button id="print-button" onClick="window.print()">imprimable</button> (mais ne le faites que si c'est nécessaire).
                         </p>
                     </div>
 
@@ -1363,6 +1363,7 @@
 <script src="js/a11y.js"></script>
 <script src="js/keyboardHelper.js"></script>
 <script src="js/hints.js"></script>
+<script src="js/certificates.js"></script>
 <script src="js/cover.js"></script>
 <script src="js/book.js"></script>
 <script src="js/intro.js"></script>

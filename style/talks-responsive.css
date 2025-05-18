@@ -85,8 +85,8 @@
 
     #talks-page #react-training .training-text {
         left: unset;
-        right: 25%;
-        transform: translate(50%, 0) skew(-15deg);
+        right: 3%;
+        transform: skew(-15deg);
     }
 
     #talks-page #agile-training .training-character {
@@ -100,8 +100,8 @@
 
     #talks-page #agile-training .training-text {
         bottom: 10px;
-        left: 25%;
-        transform: translate(-50%, 0) skew(-15deg);
+        left: 3%;
+        transform: skew(-15deg);
     }
 
     #talks-page #accessibility-training .training-character {
@@ -115,8 +115,8 @@
 
     #talks-page #accessibility-training .training-text {
         left: unset;
-        right: 25%;
-        transform: translate(50%, 0) skew(-15deg);
+        right: 3%;
+        transform: skew(-15deg);
     }
 
 

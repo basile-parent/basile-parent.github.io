@@ -9,13 +9,12 @@
 }
 
 #certificates-page .page-with-content .panel .panel-background {
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
     background: url("../assets/animations/noise.webp") repeat center center;
     opacity: 0.7;
+    pointer-events: none;
 }
 
 #certificates-page .page-with-content .panel header {
@@ -139,7 +138,6 @@
     position: absolute;
     top: 38%;
     left: 50%;
-    width: 120px;
     transform: translate(-50%, 0);
     font-size: 1.1rem;
     line-height: 1.3rem;
