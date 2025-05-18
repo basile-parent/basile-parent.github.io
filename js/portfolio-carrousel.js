@@ -2,12 +2,14 @@ let currentSlideIndex = 0
 let slideCount
 
 const TRANSITION_DURATION = 300
+// Factorize this selector because of a bug on the Github action minifier
+const CARROUSEL_ITEM_SELECT0R = "#carrousel-panel .carrousel-item"
 
 function initCarrousel() {
     initCarrouselImgAfterLoad()
     $("#carrousel-panel button.next-slide-button").on("click", nextSlide)
     $("#carrousel-panel button.prev-slide-button").on("click", prevSlide)
-    let allSlides = $("#carrousel-panel .carrousel-item");
+    let allSlides = $(CARROUSEL_ITEM_SELECT0R);
     slideCount = allSlides.length
     allSlides.each((index, element) => {
         $(element).attr("aria-label", `${ index + 1 } sur ${ slideCount }`)
@@ -66,16 +68,16 @@ function getFadeClasses(direction) {
 function transitionSlide(direction) {
     const {fadeOutClass, fadeInClass} = getFadeClasses(direction)
 
-    $("#carrousel-panel .carrousel-item.active").addClass(fadeOutClass)
+    $(`${ CARROUSEL_ITEM_SELECT0R }.active`).addClass(fadeOutClass)
     setTimeout(() => {
-        $("#carrousel-panel .carrousel-item.active").removeClass("active")
+        $(`${ CARROUSEL_ITEM_SELECT0R }.active`).removeClass("active")
 
-        $(`#carrousel-panel .carrousel-item:nth-of-type(${ currentSlideIndex + 1 })`)
+        $(`${ CARROUSEL_ITEM_SELECT0R }:nth-of-type(${ currentSlideIndex + 1 })`)
             .addClass("active")
             .addClass(fadeInClass)
 
         setTimeout(() => {
-            $("#carrousel-panel .carrousel-item")
+            $(CARROUSEL_ITEM_SELECT0R)
                 .removeClass(fadeOutClass)
                 .removeClass(fadeInClass)
         }, TRANSITION_DURATION)
@@ -83,7 +85,7 @@ function transitionSlide(direction) {
 }
 
 function adaptTitle(direction) {
-    const nextCategory = $(`#carrousel-panel .carrousel-item:nth-of-type(${ currentSlideIndex + 1 })`).attr("data-category")
+    const nextCategory = $(`${ CARROUSEL_ITEM_SELECT0R }:nth-of-type(${ currentSlideIndex + 1 })`).attr("data-category")
     const nextCategoryElement = $(`#hobbies-page h2 .title-part#title-${ nextCategory }`);
     const isNextCategoryVisible = !nextCategoryElement.hasClass("sr-only")
 
