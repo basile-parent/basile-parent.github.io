@@ -84,14 +84,16 @@ function transitionSlide(direction) {
     }, TRANSITION_DURATION)
 }
 
+// For some reason, the minifier messed up this selector too...
+const TITLE_PART_QUERY_SELECTOR = "#hobbies-page h2 .title-part"
 function adaptTitle(direction) {
     const nextCategory = $(`${ CARROUSEL_ITEM_SELECT0R }:nth-of-type(${ currentSlideIndex + 1 })`).attr("data-category")
-    const nextCategoryElement = $(`#hobbies-page h2 .title-part#title-${ nextCategory }`);
+    const nextCategoryElement = $(`${TITLE_PART_QUERY_SELECTOR}#title-${ nextCategory }`);
     const isNextCategoryVisible = !nextCategoryElement.hasClass("sr-only")
 
     if (!isNextCategoryVisible) {
         const {fadeOutClass, fadeInClass} = getFadeClasses(direction)
-        const activePart = $("#hobbies-page h2 .title-part:not(.sr-only)");
+        const activePart = $(`${TITLE_PART_QUERY_SELECTOR}:not(.sr-only)`);
 
         activePart.addClass(fadeOutClass)
         setTimeout(() => {
