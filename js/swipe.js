@@ -21,7 +21,7 @@ function simulateInnerScrollOnMobile() {
     })
 }
 
-const SPEED_TO_SWIPE = 25
+const SPEED_TO_SWIPE = 30
 function initGoToNextPageOnSwipe() {
     let touchLastX = null;
     document.addEventListener("touchmove", function (event) {
