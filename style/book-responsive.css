@@ -1,8 +1,8 @@
 @media (orientation: portrait) and (max-width: 500px),
         (orientation: landscape) and (max-height: 700px) {
     html, body, .scene {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
     }
 
     .scene {
@@ -12,12 +12,14 @@
     }
 
     .page {
-        overflow: auto;
+        overflow: hidden auto;
         background: #F6F6F6;
         z-index: 0;
         border: 1px solid #3d3d3d;
 
         transition: .7s ease-out transform;
+        touch-action: auto;
+        -ms-touch-action: auto;
     }
 
     .page:not(.active) {

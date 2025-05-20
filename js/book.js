@@ -74,6 +74,23 @@ async function goToPage(pageId, options = undefined) {
     }
 }
 
+function goToNextPage() {
+    if (currentPageIndex >= allPages.length - 1) {
+        return
+    }
+
+    console.log(Object.keys(allPages)[currentPageIndex + 1])
+    window.location.hash = Object.keys(allPages)[currentPageIndex + 1]
+}
+
+function goToPrevPage() {
+    if (currentPageIndex <= 0) {
+        return
+    }
+    console.log(Object.keys(allPages)[currentPageIndex - 1])
+    window.location.hash = Object.keys(allPages)[currentPageIndex - 1]
+}
+
 function prevPageFlip() {
     $(".page.flipped")
         .last()
