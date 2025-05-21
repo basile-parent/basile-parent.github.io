@@ -13,3 +13,9 @@
         margin-bottom: 10px;
     }
 }
+
+@media (orientation: landscape) and (max-height: 700px) {
+    #skills-page {
+        overflow: hidden;
+    }
+}

@@ -135,6 +135,10 @@
 }
 
 @media (orientation: landscape) and (max-height: 700px) {
+    #summary-page .front {
+        display: block;
+    }
+
     #summary-page .front .categories {
         padding-bottom: 0;
     }
