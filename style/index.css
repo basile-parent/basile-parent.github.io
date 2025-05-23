@@ -58,6 +58,11 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
+[tabindex="0"]:focus {
+    outline: 3px solid black;
+    box-shadow: 5px 5px 3px #444;
+}
+
 .new-tab-link {
     display: inline-block;
     width: 15px;

@@ -13,6 +13,7 @@ function initBook() {
     $("#cv-book .page").each((index, htmlElement) => {
         allPages[htmlElement.id] = { index }
     })
+    console.log("allPages", allPages)
 
     goToHrefHashPage({ disableVocalize: true })
 
@@ -40,7 +41,7 @@ function flipIfFocusIsOnHiddenElement(element) {
     const containerPage = $(element).parents(".page");
     if (!containerPage.hasClass("active")) {
         const pageHash = containerPage.attr("id")
-        window.location.hash = `#${ pageHash }`
+        goToPage(pageHash, { disableVocalize: true, pushHash: true })
     }
 }
 
@@ -72,6 +73,10 @@ async function goToPage(pageId, options = undefined) {
 
         afterFlipCb();
     }
+
+    if (options?.pushHash) {
+        history.pushState(null, null, `#${ pageId }`)
+    }
 }
 
 function goToNextPage() {
@@ -79,7 +84,6 @@ function goToNextPage() {
         return
     }
 
-    console.log(Object.keys(allPages)[currentPageIndex + 1])
     window.location.hash = Object.keys(allPages)[currentPageIndex + 1]
 }
 
@@ -87,7 +91,6 @@ function goToPrevPage() {
     if (currentPageIndex <= 0) {
         return
     }
-    console.log(Object.keys(allPages)[currentPageIndex - 1])
     window.location.hash = Object.keys(allPages)[currentPageIndex - 1]
 }
 
@@ -121,8 +124,8 @@ function afterFlipCb() {
     pageFlipCallbacks.forEach(cbFn => cbFn(currentPageIndex))
     $("#cover-page").removeClass("animated").removeClass("hinted")
     // Wait for the page to end flipping
-    setTimeout(() => {
-    }, 1000)
+    // setTimeout(() => {
+    // }, 1000)
 }
 
 function vocalizePageTitle(pageId) {
