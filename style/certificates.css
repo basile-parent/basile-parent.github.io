@@ -86,7 +86,7 @@
 
 /* Background round */
 .diploma-frame .outerBevel:before {
-    content: "";
+    content: "" / "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -100,7 +100,7 @@
 
 /* Background signature */
 .diploma-frame .outerBevel:after {
-    content: "≡≡≡≡≡";
+    content: "≡≡≡≡≡" / "";
     position: absolute;
     bottom: 3%;
     right: 10%;

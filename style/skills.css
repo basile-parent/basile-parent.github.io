@@ -224,7 +224,8 @@
 
 #skills-page #experiences-details dl,
 #skills-page #experiences-details dt,
-#skills-page #experiences-details dd {
+#skills-page #experiences-details dd,
+#skills-page #experiences-details dd p {
     margin: 0;
 }
 
@@ -299,8 +300,11 @@
         transition: none;
     }
 }
+#skills-page #experiences-details dt:has(button[aria-expanded=false]) + dd {
+    visibility: hidden;
+}
 #skills-page #experiences-details dt:has(button[aria-expanded=true]) + dd {
-    max-height: 330px;
+    max-height: 515px;
 }
 
 #skills-page #experiences-details dd ul li {
@@ -324,6 +328,6 @@
 #skills-page #experiences-details dd .experiences-context {
     display: inline-block;
     font-size: 1rem;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
